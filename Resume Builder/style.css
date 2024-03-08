@@ -42,7 +42,7 @@
 @media (max-width:812px){
     .navbar-brand{
         font-size: 0.7em !important;
-        margin: 0px 15px 0px 40px !important;
+        margin: 0px 15px 0px 30px !important;
     }
     .nav-link{
         font-size: 0.5em !important;
@@ -52,16 +52,16 @@
 @media (max-width:768px){
     .nav-link{
         font-size: 0.6em !important;
-        margin-left:40px !important;
+        margin-left:30px !important;
     }
 }
 
 @media (max-width:322px){
     .navbar-brand{
         font-size: 0.5em !important;
-        margin: 0px 10px 0px 30px !important;
+        margin: 0px 10px 0px 20px !important;
     }
     .nav-link{
-        margin-left:30px !important;
+        margin-left:20px !important;
     }
 }
