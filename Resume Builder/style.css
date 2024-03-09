@@ -31,7 +31,7 @@
 }
 
 #d1,#d2,#d3,#benifits {
-    height: 40em;
+    height: 40em !important;
 }
 
 #d2 {
