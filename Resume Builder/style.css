@@ -7,14 +7,14 @@
     font-size: 1.1em !important;
     color: black !important;
     margin: 0px 70px 0px 40px !important;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .nav-link {
     font-size: 0.8em !important;
     margin: 0px 25px !important;
     color: #8338ec !important;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 .nav-link:hover {
@@ -23,7 +23,7 @@
 
 .navbar-toggler {
     border-color: #8338ec !important;
-    margin-right: 20px;
+    margin-right: 20px !important;
 }
 
 .navbar-light .navbar-toggler-icon {
