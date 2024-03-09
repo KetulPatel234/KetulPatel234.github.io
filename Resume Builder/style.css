@@ -30,7 +30,46 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 131, 56, 236, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-@media (max-width:1048px) {
+#d1,#d2,#d3,#benifits {
+    height: 40em;
+}
+
+#d2 {
+    background-color: white;
+}
+
+#d3 {
+    background-color: #8338ec;
+}
+
+#d3 h1 {
+    margin: 60px 10px 0px 10px;
+    font-size: 70px;
+}
+
+#d3 p {
+    margin: 50px 20px 0px 20px;
+    font-size: 30px;
+}
+
+#build_resume_btn {
+    margin-top: 60px;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 15px 75px;
+    font-weight: bold;
+    color: #8338ec;
+}
+
+#build_resume_btn:hover {
+    color: black;
+}
+
+#b1,#b2,#b3,#b4,#b5,#b6{
+    border:2px solid black;
+}
+
+@media (max-width:1058px) {
     .navbar-brand {
         font-size: 0.9em !important;
         margin: 0px 40px 0px 40px !important;
@@ -39,6 +78,20 @@
     .nav-link {
         font-size: 0.6em !important;
         margin: 0px 16px !important;
+    }
+
+    #d3 h1 {
+        font-size: 50px;
+    }
+
+    #d3 p {
+        margin-top: 70px;
+        font-size: 20px;
+        max-width: 600px;
+    }
+
+    #build_resume_btn {
+        margin-top: 70px;
     }
 }
 
@@ -58,9 +111,17 @@
         font-size: 0.6em !important;
         margin-left: 30px !important;
     }
+
+    #d3 p {
+        margin-top: 70px;
+    }
+
+    #build_resume_btn {
+        margin-top: 70px;
+    }
 }
 
-@media (max-width:322px) {
+@media (max-width:328px) {
     .navbar-brand {
         font-size: 0.5em !important;
         margin: 0px 10px 0px 20px !important;
@@ -69,18 +130,19 @@
     .nav-link {
         margin-left: 20px !important;
     }
-}
 
-#d1{
-    height: 41em;
-}
 
-#d2{
-    height: 41em;
-    background-color: white;
-}
+    #d3 h1 {
+        font-size: 40px;
+    }
 
-#d3{
-    height: 41em;
-    background-color: #8338ec;
+    #d3 p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    #build_resume_btn {
+        font-size: 15px;
+        padding: 15px 45px;
+    }
 }
