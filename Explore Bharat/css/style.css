@@ -49,6 +49,7 @@
   align-items: center;
   position: relative;
   height: 100vh;
+  margin-top: 0px !important;
 }
 
 #places_carousel {
@@ -92,6 +93,10 @@
   .navbar-brand {
     font-size: 15px;
   }
+
+  .decorative-div {
+    padding-bottom: 10px !important;
+  }
 }
 
 @media (max-width: 578px) {
@@ -104,7 +109,7 @@
   }
 
   .decorative-div {
-    padding: 150px 60px
+    padding: 150px 60px 100px 60px;
   }
 
   #places_carousel {
@@ -136,6 +141,10 @@
     background-color: #007bff;
   }
 
+  .decorative-div {
+    padding: 150px 60px 100px 60px;
+  }
+
   #places_carousel {
     max-width: 60%;
   }
@@ -160,5 +169,9 @@
     padding-left: 5px;
     margin-left: 5px;
     font-size: 20px;
+  }
+
+  #places_outer {
+    margin-top: -90px !important;
   }
 }
