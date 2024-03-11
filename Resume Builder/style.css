@@ -65,8 +65,8 @@
     color: black;
 }
 
-#b1,#b2,#b3,#b4,#b5,#b6{
-    border:2px solid black;
+#benifits{
+    background-color: orange !important;
 }
 
 @media (max-width:1058px) {
@@ -110,6 +110,10 @@
     .nav-link {
         font-size: 0.6em !important;
         margin-left: 30px !important;
+    }
+
+    #d1{
+        height: 80em !important;
     }
 
     #d3 p {
