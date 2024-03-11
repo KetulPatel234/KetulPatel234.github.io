@@ -18,7 +18,8 @@
 }
 
 .nav-link:hover {
-    color: black !important
+    color: black !important;
+    font-weight: 700 !important; 
 }
 
 .navbar-toggler {
@@ -82,9 +83,20 @@
     color: black;
 }
 
-#benefits div {
-    border: 2px solid black;
+#benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
 }
+
+#benefits img {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
 
 @media (max-width:1058px) {
     .navbar-brand {
@@ -144,6 +156,10 @@
 
     #sample-resume {
         max-width: 328px;
+    }
+
+    #d2{
+        margin-bottom: 10px;
     }
 }
 
