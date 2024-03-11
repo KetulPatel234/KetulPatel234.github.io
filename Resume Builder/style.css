@@ -30,26 +30,43 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 131, 56, 236, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-#d1,#d2,#d3,#benifits {
+#d1,
+#d3,
+#d2,
+#benefits {
     height: 40em !important;
 }
 
 #d2 {
-    background-color: white;
-}
-
-#d3 {
     background-color: #8338ec;
 }
 
-#d3 h1 {
+#d2 h1 {
     margin: 60px 10px 0px 10px;
     font-size: 70px;
 }
 
-#d3 p {
+#d2 p {
     margin: 50px 20px 0px 20px;
     font-size: 30px;
+}
+
+#d3 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#up_benefit {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #8338ec;
+    font-weight: 700;
+}
+
+#sample-resume {
+    max-width: 398px;
 }
 
 #build_resume_btn {
@@ -65,8 +82,8 @@
     color: black;
 }
 
-#benifits{
-    background-color: orange !important;
+#benefits div {
+    border: 2px solid black;
 }
 
 @media (max-width:1058px) {
@@ -80,11 +97,11 @@
         margin: 0px 16px !important;
     }
 
-    #d3 h1 {
+    #d2 h1 {
         font-size: 50px;
     }
 
-    #d3 p {
+    #d2 p {
         margin-top: 70px;
         font-size: 20px;
         max-width: 600px;
@@ -112,16 +129,21 @@
         margin-left: 30px !important;
     }
 
-    #d1{
+    #d1,
+    #benefits {
         height: 80em !important;
     }
 
-    #d3 p {
+    #d2 p {
         margin-top: 70px;
     }
 
     #build_resume_btn {
         margin-top: 70px;
+    }
+
+    #sample-resume {
+        max-width: 328px;
     }
 }
 
@@ -135,12 +157,11 @@
         margin-left: 20px !important;
     }
 
-
-    #d3 h1 {
+    #d2 h1 {
         font-size: 40px;
     }
 
-    #d3 p {
+    #d2 p {
         font-size: 15px;
         margin-bottom: 30px;
     }
@@ -148,5 +169,15 @@
     #build_resume_btn {
         font-size: 15px;
         padding: 15px 45px;
+    }
+
+    #sample-resume {
+        max-width: 228px;
+        height: 300px;
+    }
+
+    #up_benefits {
+        padding: 0px 10px;
+
     }
 }
