@@ -1,0 +1,271 @@
+* {
+  font-family: "Protest Riot", sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+.nav-link {
+  position: relative;
+  color: #a0a0a0;
+  text-decoration: none;
+  padding: 0 20px;
+  margin: 0px 20px;
+  letter-spacing: 0.5px;
+}
+
+.navbar-toggler {
+  margin-right: 15px !important;
+}
+
+.decorative-div {
+  text-align: center;
+  padding: 250px 100px;
+}
+
+.decorative-div h2 {
+  color: #007bff;
+  font-size: 90px;
+  margin-bottom: 60px;
+}
+
+.decorative-div p {
+  font-size: 30px;
+}
+
+#places_outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  margin-top: 0px !important;
+}
+
+#places_carousel {
+  max-width: 65%;
+  margin: 0 auto;
+  width: auto;
+}
+
+#places_carousel_back img {
+  filter: blur(7px);
+}
+
+#places_carousel_back {
+  position: absolute;
+}
+
+#places_carousel .carousel-item:hover {
+  cursor: pointer;
+}
+
+.distributionDiv div:hover {
+  cursor: pointer;
+}
+
+.carousel-caption h5 {
+  color: white !important;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: transparent;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  background-color: #007bff;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+#carousel-states {
+  width: 100% !important;
+  height: 100vh !important;
+  /* background-color: black; */
+}
+
+#carousel-states .carousel-item {
+  font-size: 100px !important;
+  text-align: center;
+  letter-spacing: 10px;
+  height: 100vh !important;
+}
+
+#carousel-states .carousel-item img {
+  height: 100vh !important;
+  filter: blur(7px) !important;
+}
+
+#carousel-states .carousel-caption {
+  color: black !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-35%);
+  text-align: center;
+}
+
+#carousel-states .carousel-item:hover {
+  cursor: pointer !important;
+}
+
+#carousel-states .carousel-control-prev-icon,
+#carousel-states .carousel-control-next-icon {
+  color: black !important;
+  background-color: black !important;
+}
+
+#carousel-states button {
+  opacity: 1 !important;
+}
+
+@media (max-width: 320px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+
+  .decorative-div {
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 578px) {
+  .decorative-div h2 {
+    font-size: 50px;
+  }
+
+  .decorative-div p {
+    font-size: 25px;
+  }
+
+  .decorative-div {
+    padding: 150px 60px 100px 60px;
+  }
+
+  #places_carousel {
+    max-width: 55%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 13px !important;
+  }
+
+  .carousel-indicators button {
+    margin-bottom: -15px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    margin: 7px 0px !important;
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+  .navbar-brand {
+    margin-left: 20px;
+  }
+
+  .nav-link:hover::after {
+    width: 30%;
+    background-color: #007bff;
+  }
+
+  .decorative-div {
+    padding: 150px 60px 100px 60px;
+  }
+
+  #places_carousel {
+    max-width: 60%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 20px !important;
+  }
+
+  .carousel-indicators button {
+    margin-bottom: -10px !important;
+  }
+}
+
+@media (max-width: 945px) {
+  .nav-link {
+    padding: 0px 10px;
+    margin: 0px 7px;
+    font-size: 20px;
+  }
+
+  .navbar-brand {
+    padding-left: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+  }
+
+  #places_outer {
+    margin-top: -90px !important;
+  }
+}
+
+
+.div-image {
+  width: 500px;
+  height: 100%;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+.distributionDiv {
+  padding-top: 200px;
+  padding-left: 160px;
+}

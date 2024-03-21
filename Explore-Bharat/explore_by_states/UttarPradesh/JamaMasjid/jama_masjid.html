@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jama Masjid</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+  font-weight: 300;
+
+      }
+      .header {
+        height: 400px; /* Adjust height as needed */
+        background-image: url("jama_masjid_bg.jpg");
+        background-size: cover;
+        background-position: center;
+        align-items: center; /* Add this line */
+      }
+      .header h1 {
+        color: white;
+        position: relative;
+        top: 310px;
+        left: 50px;
+        font-size: 3em;
+      }
+      
+      .content {
+        padding: 20px;
+        font-size: 17px;
+       color: black;
+        text-align: justify;      
+      }
+      .content-details{
+        padding: 0px 100px;
+      }
+      .hidden {
+        display: none;
+      }
+      .show-more-btn {
+        display: block;
+        /* margin: 20px auto;
+        padding: 20px; */
+        cursor: pointer;
+        
+        color: blue;
+
+
+      }
+     
+        .img-gallery{
+            width: 70%;
+            margin:40px auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-gap:40px;
+            z-index: 100;
+        }
+
+        .img-gallery img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    transition: transform 0.1s; /* Adding transition for smoother effect */
+}
+
+.img-gallery img:hover {
+    transform: scale(1.05); /* Scale up the image slightly on hover */
+    
+}
+
+
+        .full-img{
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.9);
+            position: fixed;
+            top:0;
+            left: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .full-img img{
+            width:90%;
+            max-width: 650px;
+
+        }
+
+        .full-img span{
+            position: absolute;
+            top:5%;
+            right: 5%;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+
+        .transport-section {
+            margin-top:0px;
+            margin-left: 220px;
+            margin-right: 220px;
+            background-color: #e1c5c5; /* Change the background color as needed */
+            padding-top: 20px;
+            text-align: justify;
+            color: rgb(21, 20, 20);
+            height:100vh;
+        }
+        .transport-section h2 {
+            color: #100f0f; /* Change the text color as needed */
+            text-align: center;
+          }
+        .transport-method {
+            display: flex;
+            align-items: center;
+            margin: 90px;
+        }
+        .transport-method img {
+            width:100px;
+            height: 100px;
+            margin-right:10px;}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Jama Masjid</h1>
+      
+    </div>
+
+    <div class="content">
+      <div class="content-details" >
+        <h4>HISTORY</h4>
+       
+        <p id="content">
+          According to accounts in the official court 
+          chronicle, Shahjahannama, the Jama Masjid 
+          originated from an imperial decree by Mughal 
+          emperor Shah Jahan in the year 1637. 
+          Shah Jahan ordered that a new mosque be built
+           in Agra, situated alongside a new chowk (plaza)
+            in front of the Agra Fort's Delhi gate. Shah
+             Jahan's eldest daughter, the princess Jahanara 
+             Begum, requested permission from the emperor
+              to personally endow the new mosque, which was
+               granted. 
+             
+        
+        
+        </p>
+        
+
+        <div id="show-more" class="hidden">
+            
+          </div>
+          <div id="show-more-btn" class="show-more-btn" onclick="showMore()">
+            Know more
+          </div>
+        
+      </div>
+      
+    </div>
+
+
+    <div class="content">
+      <div class="content-details" >
+        <h4>TOURIST ATTRACTIONS</h4>
+       
+        <p id="content">
+            
+          The Jama Masjid of Agra is an early 
+          example of imperial city-mosques endowed 
+          during the reign of Shah Jahan.It is 
+          primarily built of red sandstone, 
+          with white marble used intermittently.
+          The mosque covers an area of 1200 square
+          metres, and is elevated above ground level
+          by a raised podium. Decoration on the
+          mosque structure consists of reliefs
+          and mouldings, executed in sandstone 
+          with marble inlays. The mosque's
+          plan and elevation are similar to
+          that of the Wazir Khan Mosque, 
+          another Mughal mosque of Shah Jahan,
+          built a decade prior in Lahore.
+
+        
+        </p>
+      </div>
+      </div>
+    
+      <div class="content">
+        <div class="content-details" >
+          <h4>TIMINGS</h4>
+         
+          <p id="content">
+            
+It is open on all days of the week. 
+There is no entry fee to visit Jama Masjid.
+And timings are given below
+           <ul>
+            <li> Monday to Sunday-6:00 am – 8:00 pm</li>
+           
+           </ul>
+           
+
+           
+
+          </p>
+        </div>
+        </div>
+        
+
+        <div class="content">
+          <div class="content-details" >
+            <h2>PHOTO GALLERY</h2>
+          </div>
+          </div>
+       
+        <div class="full-img" id="fullImgBox">
+          <img src="JamaMasjid1.jpg" id="fullImg"/>
+          <span onclick="closeFullImg()">x</span>
+      </div>
+      <div class="img-gallery">
+          <img src="JamaMasjid1.jpg"   onclick="openFullImg(this.src)"/>
+          <img src="JamaMasjid2.jpg"  onclick="openFullImg(this.src)"/>
+          <img src="JamaMasjid3.jpg"  onclick="openFullImg(this.src)"/>
+          <img src="JamaMasjid5.jpg"  onclick="openFullImg(this.src)"/>
+          <img src="jamamasjid6.cms"  onclick="openFullImg(this.src)"/>
+          <img src="jama_masjid_bg.jpg"  onclick="openFullImg(this.src)"/>
+      </div>
+
+      <div class="content">
+        <div class="content-details" >
+          <h2>TRANSPORT GUIDE</h2>
+        </div>
+        </div>
+     
+    <div class="transport-section">
+      <h2>How to Get There</h2>
+      <div class="transport-method">
+          <img src="../bus.png" alt="Road Icon" >
+          <div>
+              <p><strong>By Road</strong></p>
+              <p> One common bus station nearby is the Red Fort Bus Stop, which is about a 5-10 minute walk from Jama Masjid.</p>
+          </div>
+      </div>
+      <div class="transport-method">
+          <img src="../train.png" alt="Train Icon">
+          <div>
+              <p><strong>By Train</strong></p>
+              <p>The nearest railway station to Jama Masjid is the Old Delhi Railway Station, also known as Delhi Junction. It is one of the major railway stations in Delhi and is located approximately 1.5 to 2 kilometers away from Jama Masjid</p>
+          </div>
+      </div>
+      <div class="transport-method">
+          <img src='../air.png' alt="Airplane Icon">
+          <div>
+              <p><strong>By Air</strong></p>
+              <p>
+                The nearest airport to Jama Masjid in Old Delhi, India, is the Indira Gandhi International Airport (DEL). It is located in the southwestern part of Delhi, approximately 15 to 20 kilometers away from Jama Masjid</p>
+          </div>
+   </div>
+  </div>
+  
+    
+    <script>
+      function showMore() {
+        var contentDiv = document.getElementById("content");
+        var showMoreDiv = document.getElementById("show-more");
+        var showMoreBtn = document.getElementById("show-more-btn");
+
+        if (showMoreDiv.classList.contains("hidden")) {
+          // Fetch additional content dynamically here
+          var additionalContent = `
+          This was one of several reconstruction projects
+                of the period in Mughal Agra, 
+               and represented a renewed attempt at building
+                a congregational mosque for the city; 
+                the construction of one had commenced earlier
+                 by the Yamuna river, but this was interrupted 
+                 and abandoned when attention was diverted
+                  towards completing the Taj Mahal. 
+                  Ebba Koch suggests two possible reasons 
+                  for the shift in location to the area around 
+                  the fort; either the riverfront area was deemed more residential than religious, or the new mosque was feared to overshadow the Taj Mahal's mosque building. Wayne Begley provides the reason of
+           the older site being too distant from the city
+
+            `;
+          showMoreDiv.innerHTML = additionalContent;
+          showMoreDiv.classList.remove("hidden");
+          showMoreBtn.textContent = "";
+        } else {
+          showMoreDiv.classList.add("hidden");
+          showMoreBtn.textContent = "Know more";
+        }
+
+
+        
+      }
+      var fullImgBox=document.getElementById("fullImgBox");
+        var fullImg=document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display="flex";
+            fullImg.src=pic;
+
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display="none";
+
+        }
+    </script>
+
+
+
+
+
+
+      
+
+
+  </body>
+</html>

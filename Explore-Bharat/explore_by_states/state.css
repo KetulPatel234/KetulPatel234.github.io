@@ -1,0 +1,171 @@
+* {
+    font-family: "Protest Riot", sans-serif;
+    ;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.nav-link {
+    position: relative;
+    color: #a0a0a0;
+    text-decoration: none;
+    padding: 0 20px;
+    margin: 0px 20px;
+    letter-spacing: 0.5px;
+}
+
+.navbar-toggler {
+    margin-right: 15px !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.5s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    background-color: #007bff;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+@media (max-width: 320px) {
+    .navbar-brand {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        margin: 7px 0px !important;
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .navbar-brand {
+        margin-left: 20px;
+    }
+
+    .nav-link:hover::after {
+        width: 30%;
+        background-color: #007bff;
+    }
+}
+
+@media (max-width: 945px) {
+    .nav-link {
+        padding: 0px 10px;
+        margin: 0px 7px;
+        font-size: 20px;
+    }
+
+    .navbar-brand {
+        padding-left: 5px;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+}
+
+#state-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #219ebc;
+}
+
+#state-div #state-name {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+#state-div #state-info {
+    max-width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+#explore-state {
+    margin: 30px 0px;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.o-div {
+    height: 41em;
+}
+
+.o-div img {
+    max-width: 600px;
+}
+
+.o-div img:hover{
+    cursor: pointer;
+}
+
+.place_name{
+    font-size: 40px;
+}
+
+.d1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.d2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-div p {
+    margin: 30px;
+    max-width: 500px;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+.o-div .btn{
+    border: 2px solid black;
+    padding: 5px 40px;
+}
+
+.o-div .btn:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .o-div {
+        height: 82em;
+    }
+}

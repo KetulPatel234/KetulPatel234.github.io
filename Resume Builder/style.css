@@ -81,6 +81,7 @@
 
 #build_resume_btn:hover {
     color: black;
+    border: 3px solid black;
 }
 
 #benefits {

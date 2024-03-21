@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gir National Park</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+
+    }
+
+    .header {
+      height: 400px;
+      /* Adjust height as needed */
+      background-image: url(gir_bg.jpg);
+      background-size: cover;
+      background-position: center;
+      align-items: center;
+      /* Add this line */
+    }
+
+    .header h1 {
+      color: white;
+      position: relative;
+      top: 310px;
+      left: 40px;
+      font-size: 3em;
+    }
+
+    .content {
+      padding: 20px;
+      font-size: 17px;
+      color: black;
+      text-align: justify;
+    }
+
+    .content-details {
+      padding: 0px 100px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .show-more-btn {
+      display: block;
+      /* margin: 20px auto;
+            padding: 20px; */
+      cursor: pointer;
+      color: blue;
+    }
+
+    .img-gallery {
+      width: 70%;
+      margin: 40px auto 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      z-index: 100;
+    }
+
+    .img-gallery img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      transition: transform 0.1s;
+      /* Adding transition for smoother effect */
+    }
+
+    .img-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .full-img {
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .full-img img {
+      width: 90%;
+      max-width: 650px;
+
+    }
+
+    .full-img span {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+
+    .transport-section {
+      margin-top: 0px;
+      margin-left: 220px;
+      margin-right: 220px;
+      background-color: #e1c5c5;
+      /* Change the background color as needed */
+      padding-top: 20px;
+      text-align: justify;
+      color: rgb(21, 20, 20);
+      height: 100vh;
+    }
+
+    .transport-section h2 {
+      color: #100f0f;
+      /* Change the text color as needed */
+      text-align: center;
+    }
+
+    .transport-method {
+      display: flex;
+      align-items: center;
+      margin: 90px;
+    }
+
+    .transport-method img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .close {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Gir National Park</h1>
+
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+      <h4>HISTORY</h4>
+
+      <p id="content">
+        The area of Gir National Park was once the hunting ground for the Britishers during their reign in
+        India and while hunting these great numbers of tigers and lions accompanied by several Rajas and
+        Maharajas of the region, it was considered as the matter of great pride. It was in the year 1899,
+        the major counts of lions decreased sharply with the effect of famine and as a result Lord Curzon
+        cancelled his trip in Gir which was scheduled for shooting upon invitation by the nawabs of the region.
+        The effect of famine was so great that Lord Curzon even advised the residents of the area to save the
+        remaining lions.
+      </p>
+
+
+      <div id="show-more" class="hidden">
+
+      </div>
+      <div id="show-more-btn" class="show-more-btn" onclick="showMore()">
+        Know more
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="content">
+    <div class="content-details">
+      <h4>Wildlife in Gir National Park Forest</h4>
+
+      <p id="content">
+        The land of the Asiatic lion is the ideal reserve for the tremendous varieties of wild creatures to
+        roam freely and safely. To make a royal journey towards the grand rugged hills of Sasan Gir, the
+        wildlife lovers can get a fabulous opportunity to witness around 2,375 distinct fauna species of Gir
+        to include around 38 species of mammals, 300 species of birds, 37 species of reptiles and more than
+        2,000 species of insects.
+        <br><br>
+        The group of the carnivores in Gir is truly comprised of the presence of Asiatic lions, Indian Leopards,
+        Indian Cobras, Sloth bears, Jungle cats, Golden Jackals, Indian Palm Civets, Striped Hyenas,
+        Indian Mongoose and Ratels. Desert cats and Rusty-spotted cats exist but can be rarely seen.
+        <br><br>
+        The main herbivores genres of the residents of Gir are Chital, Nilgai (or Blue bull), Antelope,
+        Sambar, Four-horned Chinkara and Wild boar. Blackbucks from the surrounding area can be occasionally
+        identified in the sanctuary.
+        <br><br>
+        The group of smaller mammals will also include Porcupine and Hare where Pangolin is rare in
+        Gir sanctuary. The reptiles are represented by the Marsh crocodile hir Tortoise and the Monitor
+        Lizard in the water areas of the sanctuary. Snakes and Pythons too can be found in the lush bushes
+        and along the streams. Being adopted under the Indian Crocodile Conservation Project in 1977,
+        the Gujarat State Forest Department has used the reserve area where the area is also flourished
+        with more than 300 species of birds. The scavenger group of birds has 6 recorded species of Vultures.
+        Some of the typical species of Gir include Crested Serpent Eagle, Brown Fish Owl, Crested Hawk-eagle,
+        endangered Bonelli's Eagle, Rock Bush-Quail, Indian Eagle-Owl, Black-headed Oriole, Pygmy Woodpecker,
+        Crested Treeswift and Indian Pitta.
+      </p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+      <h4>Safari Timing</h4>
+
+      <p id="content">
+        In Gir, most of the area is comprised of rugged hills, with high ridges and densely forested valleys,
+        wide grassland plateaus, and isolated hilltops. Around half of the forested area of the park is being
+        stuffed with teak forest, with other floral varieties like khair, dhavdo, timru, amla, and many others.
+        The other half is non-teak forest, with samai, simal, khakhro and asundro jambu, umro, amli, vad and
+        kalam; mostly broadleaf and evergreen trees. The river Hiran is the only one to flow year-round; with
+        rest of the inflows being seasonal. There are also areas of the park with open scrub and savannah-type
+        of grassland.
+        To have a fantastic safari experience at Sasan Gir, the privilege of jeep safari with an assistance of
+        a guide is beneficial. The Gir Forest Department also organizes "Lion Shows" for much fun.
+        They make sure that you can see the lions at close range so they send trackers early morning on a
+        mission to the located places and tempt them with live baits.
+
+      <ul>
+        <li>06:30 AM to 08:30 AM</li>
+        <li>08:30 AM to 10:30 AM</li>
+        <li>03:00 PM to 05:30 PM</li>
+      </ul>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="content">
+    <div class="content-details">
+      <h2>PHOTO GALLERY</h2>
+    </div>
+  </div>
+
+  <div class="full-img" id="fullImgBox">
+    <img src="gir1.jpeg" id="fullImg" />
+    <span onclick="closeFullImg()">&times;</span>
+  </div>
+  <div class="img-gallery">
+    <img src="gir1.jpeg" id="i1" onclick="openFullImg(this)" />
+    <img src="gir2.jpg" id="i2" onclick="openFullImg(this)" />
+    <img src="gir3.jpg" id="i3" onclick="openFullImg(this)" />
+    <img src="gir4.jpg" id="i4" onclick="openFullImg(this)" />
+    <img src="gir5.jpeg" id="i5" onclick="openFullImg(this)" />
+    <img src="gir6.png" id="i6" onclick="openFullImg(this)" />
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+      <h2>TRANSPORT GUIDE</h2>
+    </div>
+  </div>
+
+  <div class="transport-section">
+    <h2>How to Get There</h2>
+    <div class="transport-method">
+      <img src="../bus.png" alt="Road Icon">
+      <div>
+        <p><strong>By Road</strong></p>
+        <p>Junagadh (71 km) and Veraval (42 km) have bus connectivity to national park.</p>
+      </div>
+    </div>
+    <div class="transport-method">
+      <img src="../train.png" alt="Train Icon">
+      <div>
+        <p><strong>By Train</strong></p>
+        <p>The Dwarkadhish Temple is approximately 2 kilometers away from the Dwarka railway station,
+          making it easily accessible for pilgrims and tourists seeking to explore the sacred site.</p>
+      </div>
+    </div>
+    <div class="transport-method">
+      <img src='../air.png' alt="Airplane Icon">
+      <div>
+        <p><strong>By Air</strong></p>
+        <p>
+          The nearest airport to Dwarka is the Jamnagar Airport (also known as Govardhanpur Airport),
+          located approximately 45 kilometers away.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function showMore() {
+      var contentDiv = document.getElementById("content");
+      var showMoreDiv = document.getElementById("show-more");
+      var showMoreBtn = document.getElementById("show-more-btn");
+
+      if (showMoreDiv.classList.contains("hidden")) {
+        // Fetch additional content dynamically here
+        var additionalContent = `By the time to save the more vulnerable acts like hunting and poaching, the Government 
+            of India banned the hunting process in the area in the year 1960 and today with an approachable count 
+            of increase in lions the area is only available for photo safaris. Today the park is recognized as one 
+            of the most important protected areas in Asia due to its supported species. Gir is accustomed of unique 
+            ecosystem with diverse flora and fauna and is now considered as one of the most important protected 
+            areas in Asia due to its unsupported species. The various initiatives and efforts by the Indian 
+            Government and the NGOs brought many changes in the population of the Asiatic lions in the year.
+            Where in 2005, the count rose to 359 and again during the April 2010, the reserve witnessed a greater 
+            rise in the count to reach by 52 as compared to 2005 ratio. The lion breeding program included the 
+            park and its surrounding area has bred about 180 lions in its captivity since its inception.`;
+        showMoreDiv.innerHTML = additionalContent;
+        showMoreDiv.classList.remove("hidden");
+        showMoreBtn.textContent = "";
+      } else {
+        showMoreDiv.classList.add("hidden");
+        showMoreBtn.textContent = "Know more";
+      }
+
+
+
+    }
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    var xyz;
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic.src;
+      xyz = document.getElementById(pic.id);
+      xyz.classList.add('close');
+    }
+
+    function closeFullImg(pic) {
+      fullImgBox.style.display = "none";
+      xyz.classList.remove('close')
+    }
+  </script>
+
+</body>
+
+</html>

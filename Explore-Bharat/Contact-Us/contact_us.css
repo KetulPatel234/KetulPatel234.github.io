@@ -1,0 +1,124 @@
+/* .whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .whatsapp-icon {
+    margin-top: 16px;
+  }
+
+  
+  @media screen and (max-width: 767px){
+    .whatsapp-icon {
+      margin-top: 10px;
+    }
+    .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+    }
+  } */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container form {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 600px; /* Maximum width for larger screens */
+    padding: 20px; /* Added padding for better spacing */
+    display: flex;
+    flex-direction: column; /* Changed to column layout for smaller screens */
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.container form h1 {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container form input,
+.container form textarea {
+    width: 100%; /* Adjusted width for smaller screens */
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.container form input::placeholder,
+.container form textarea::placeholder {
+    color: #ddd;
+}
+
+.container form #lastName,
+.container form #mobile {
+    margin-left: 0; /* Adjusted margin for smaller screens */
+}
+
+.container form h4 {
+    color: #fff;
+    font-weight: 300;
+    width: 100%; /* Adjusted width for smaller screens */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container form textarea {
+    min-height: 100px; /* Adjusted height for smaller screens */
+    max-height: 150px; /* Adjusted maximum height for larger screens */
+}
+
+.container form #button {
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100%; /* Adjusted width for smaller screens */
+    padding: 10px 0; /* Added padding for better spacing */
+    transition: 0.3s;
+}
+
+.container form #button:hover {
+    opacity: 0.5;
+}
+
+.container form input,
+.container form textarea {
+    caret-color: white; 
+    color: darkturquoise;
+}
