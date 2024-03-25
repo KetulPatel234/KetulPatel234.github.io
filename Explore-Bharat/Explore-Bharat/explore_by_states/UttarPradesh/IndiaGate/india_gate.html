@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>India gate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+
+      }
+      .header {
+        height: 400px; /* Adjust height as needed */
+        background-image: url("indiagate4.jpg");
+        background-size: cover;
+        background-position: center;
+
+        align-items: center; /* Add this line */
+      }
+      .header h1 {
+        color: rgb(222, 222, 222);
+        position: relative;
+        top: 310px;
+        left: 40px;
+        font-size: 3em;
+      }
+      
+      .content {
+        padding: 20px;
+        font-size: 17px;
+       color: black;
+        text-align: justify;      
+      }
+      .content-details{
+        padding: 0px 100px;
+      }
+      .hidden {
+        display: none;
+      }
+      .show-more-btn {
+        display: block;
+        /* margin: 20px auto;
+        padding: 20px; */
+        cursor: pointer;
+        
+        color: blue;
+
+
+      }
+     
+        .img-gallery{
+            width: 70%;
+            margin:40px auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-gap:40px;
+            z-index: 100;
+        }
+
+        .img-gallery img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            transition: transform 0.1s; /* Adding transition for smoother effect */
+        }
+
+        .img-gallery img:hover {
+            transform: scale(1.05); /* Scale up the image slightly on hover */
+            
+        }
+
+
+        .full-img{
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.9);
+            position: fixed;
+            top:0;
+            left: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .full-img img{
+            width:90%;
+            max-width: 650px;
+
+        }
+
+        .full-img span{
+            position: absolute;
+            top:5%;
+            right: 5%;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .close{
+          visibility: hidden;
+        }
+
+        .transport-section {
+            margin-top:0px;
+            margin-left: 220px;
+            margin-right: 220px;
+            background-color: #e1c5c5; /* Change the background color as needed */
+            padding-top: 20px;
+            text-align: justify;
+            color: rgb(21, 20, 20);
+            
+        }
+        .transport-section h2 {
+            color: #100f0f; /* Change the text color as needed */
+            text-align: center;
+          }
+        .transport-method {
+            display: flex;
+            align-items: center;
+            margin: 90px;
+        }
+        .transport-method img {
+            width:100px;
+            height: 100px;
+            margin-right:10px;}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>India Gate</h1>
+      
+      
+    </div>
+
+    <div class="content">
+      <div class="content-details" >
+
+       
+        <p id="content">
+            
+            <h2>HISTORY</h2>
+           <p> India Gate, located in the heart of New Delhi, stands as one of the most iconic and significant monuments in India. It serves as a memorial to the soldiers of the Indian Army who lost their lives in various conflicts, particularly during World War I. Designed by Sir Edwin Lutyens, the India Gate was originally known as the All India War Memorial and was completed in 1931.</p>
+<p>
+The idea for a memorial to honor Indian soldiers who had sacrificed their lives during the war was proposed by the then Viceroy of India, Lord Irwin, in 1919. The foundation stone for the monument was laid by the Duke of Connaught in 1921, and construction began shortly afterward. The monument's design was inspired by the Arc de Triomphe in Paris, and it stands at a height of 42 meters (138 feet).</p>
+
+</p>
+
+</p>
+        </p>
+        
+        <div id="show-more" class="hidden">
+            
+          </div>
+          <div id="show-more-btn" class="show-more-btn" onclick="showMore()">
+            Know more
+          </div>
+        
+      </div>
+      
+    </div>
+
+    <div class="content">
+      <div class="content-details" >
+        <h2>Architecture</h2>
+       
+        <p id="content">India's architecture reflects vast cultural diversity, highlighted brilliantly through structures like this tourist site located in Delhi. Architect Edwin Lutyens designed this monumental work with an extraordinary blend of diverse architectural styles incorporating elements from both Indo-Islamic as well as European traditions.
+
+          <p>At 42 meters high, this tourist site features a grand triumphal arch made exclusively with sandstones adorned intricately with fascinating carvings inspired by Rome's Arch Constantine.
+          </p><p>
+            Supported on either side by tall pillars etched delicately with various decorations signifying resilience and strength crowned with beautiful motifs, this tourist site stands tall as an epitome of a harmonious fusion of Indian and Western architectural influences.
+        </p></p>
+        
+
+      </div>
+      </div>
+    <div class="content">
+      <div class="content-details" >
+        <h2>TIMINGS</h2>
+       
+        <p id="content">
+          India Gate in New Delhi is not restricted by specific opening or closing times as it is an open-air monument and public space. Visitors can access the area around India Gate at any time of the day or night. However, it's important to note that certain areas around India Gate may have restricted access during special events, national holidays, or security reasons. Additionally, if you plan to visit during the evening, you can enjoy the monument's illumination, which usually starts after sunset and continues until late at night. 
+</p>
+        </p>
+        </div>
+    </div>
+    
+      <div class="content">
+        <div class="content-details" >
+          <h2>NEARBY ATTRACTIONS</h2>
+         
+          <p id="content">
+            
+            Near India Gate in New Delhi, visitors can explore a plethora of attractions that showcase the city's rich history, culture, and architecture. Just a short distance away lies the sprawling expanse of Rajpath, flanked by iconic landmarks such as Rashtrapati Bhavan, the official residence of the President of India, and Parliament House, where the country's legislative assembly convenes. The National Museum, located nearby, offers an extensive collection of artifacts, art, and archaeological treasures spanning thousands of years of Indian history. Additionally, the vibrant markets of Connaught Place provide a bustling atmosphere for shopping, dining, and soaking in the local culture.  </p>
+          
+       </div>
+      </div>
+    
+      
+        </div>
+        
+
+        <div class="content">
+          <div class="content-details" >
+            <h2>PHOTO GALLERY</h2>
+          </div>
+          </div>
+       
+        <div class="full-img" id="fullImgBox">
+          <img src="indiagate4.jpg" id="fullImg"/>
+          <span onclick="closeFullImg()">&times;</span>
+      </div>
+      <div class="img-gallery">
+          <img src="indiagate1.jpg" id="i1" onclick="openFullImg(this)"/>
+          <img src="indiagate2.jpg" id="i2" onclick="openFullImg(this)"/>
+          <img src="indiagate3.jpg" id="i3" onclick="openFullImg(this)"/>
+          <img src="indiagate5.jpg" id="i4" onclick="openFullImg(this)"/>
+          <img src="indiagate6.jpg" id="i5" onclick="openFullImg(this)"/>
+          <img src="indiagate7.jpg" id="i6" onclick="openFullImg(this)"/>
+      </div>
+
+      <div class="content">
+        <div class="content-details" >
+          <h2>TRANSPORT GUIDE</h2>
+        </div>
+        </div>
+     
+    <div class="transport-section">
+      <h2>How to Get There</h2>
+      <div class="transport-method">
+          <img src="../bus.png" alt="Road Icon" >
+          <div>
+            <p><strong>By Road</strong></p>
+            <p>Drive to India Gate via car, taxi, or bus from within Delhi or nearby cities. Follow directions to the centrally located monument, factoring in traffic conditions.</p>
+        </div>
+      </div>
+      <div class="transport-method">
+          <img src="../train.png" alt="Train Icon">
+          <div>
+            <p><strong>By Train</strong></p>
+            <p>Arrive at New Delhi Railway Station or Old Delhi Railway Station (Delhi Junction). From either station, take a taxi, auto-rickshaw, or Delhi Metro for a 20-30 minute journey to India Gate.</p>
+        </div>
+      </div>
+      <div class="transport-method">
+          <img src='../air.png' alt="Airplane Icon">
+          <div>
+            <p><strong>By Air</strong></p>
+            <p>Arrive at Indira Gandhi International Airport (DEL), approximately 15-20 km from India Gate. Hire a taxi or use ride-hailing services for a 30-60 minute journey.
+
+            </p>
+        </div>
+   </div>
+  </div>
+  
+    
+    <script>
+      function showMore() {
+        var contentDiv = document.getElementById("content");
+        var showMoreDiv = document.getElementById("show-more");
+        var showMoreBtn = document.getElementById("show-more-btn");
+
+        if (showMoreDiv.classList.contains("hidden")) {
+          // Fetch additional content dynamically here
+          var additionalContent = `
+         
+          
+          <p>Today, India Gate serves as a symbol of national pride and sacrifice, attracting visitors from around the world. It is also a popular gathering place for locals and tourists alike, especially in the evenings when the monument is illuminated. Surrounding the India Gate is the lush green expanse of the Rajpath, which stretches from the gate to the Rashtrapati Bhavan, the official residence of the President of India, making it a significant part of Delhi's landscape and history.
+          </p>
+
+            `;
+          showMoreDiv.innerHTML = additionalContent;
+          showMoreDiv.classList.remove("hidden");
+          showMoreBtn.textContent = "";
+        } else {
+          showMoreDiv.classList.add("hidden");
+          showMoreBtn.textContent = "Know more";
+        }
+
+
+        
+      }var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    var xyz;
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic.src;
+      xyz = document.getElementById(pic.id);
+      xyz.classList.add('close');
+    }
+
+    function closeFullImg(pic) {
+      fullImgBox.style.display = "none";
+      xyz.classList.remove('close')
+    }
+    </script>
+    </body>
+</html>

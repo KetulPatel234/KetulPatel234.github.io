@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun Temple</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+
+      }
+      .header {
+        height: 400px; /* Adjust height as needed */
+        background-image: url("suntemple122.jpg");
+        background-size: cover;
+        background-position: center;
+
+        align-items: center; /* Add this line */
+      }
+      .header h1 {
+        color: rgb(255, 247, 247);
+        position: relative;
+        top: 310px;
+        left: 40px;
+        font-size: 3em;
+      }
+      
+      .content {
+        padding: 20px;
+        font-size: 17px;
+       color: black;
+        text-align: justify;      
+      }
+      .content-details{
+        padding: 0px 100px;
+      }
+      .hidden {
+        display: none;
+      }
+      .show-more-btn {
+        display: block;
+        /* margin: 20px auto;
+        padding: 20px; */
+        cursor: pointer;
+        
+        color: blue;
+      }
+     
+      .img-gallery{
+            width: 70%;
+            margin:40px auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-gap:40px;
+            z-index: 100;
+        }
+
+        .img-gallery img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            transition: transform 0.1s; /* Adding transition for smoother effect */
+        }
+
+        .img-gallery img:hover {
+            transform: scale(1.05); /* Scale up the image slightly on hover */
+            
+        }
+
+
+        .full-img{
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.9);
+            position: fixed;
+            top:0;
+            left: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .full-img img{
+            width:90%;
+            max-width: 650px;
+
+        }
+
+        .full-img span{
+            position: absolute;
+            top:5%;
+            right: 5%;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .close{
+          visibility: hidden;
+        }
+
+
+        .transport-section {
+            margin-top:0px;
+            margin-left: 220px;
+            margin-right: 220px;
+            background-color: #e1c5c5; /* Change the background color as needed */
+            padding-top: 20px;
+            text-align: justify;
+            color: rgb(21, 20, 20);
+            
+        }
+        .transport-section h2 {
+            color: #100f0f; /* Change the text color as needed */
+            text-align: center;
+          }
+        .transport-method {
+            display: flex;
+            align-items: center;
+            margin: 90px;
+        }
+        .transport-method img {
+            width:100px;
+            height: 100px;
+            margin-right:10px;}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Sun Temple</h1>
+      
+      
+    </div>
+
+    <div class="content">
+      <div class="content-details" >
+
+       
+        <p id="content">
+            
+            <h2>HISTORY</h2>
+          <p>The Sun Temple in Gujarat, India, located in Modhera, is a stunning testament to ancient Indian architecture and religious devotion. Constructed in the 11th century during the reign of the Solanki dynasty, the temple is dedicated to the Hindu sun god, Surya. The temple was built by King Bhimdev I, who was a devout follower of Surya. Its construction represents the zenith of Solanki architectural style, characterized by intricate carvings, detailed sculptures, and precise geometrical patterns.
+          </p><p>
+            The Sun Temple of Modhera is divided into three distinct components: the Surya Kund, Sabha Mandap, and Guda Mandap. The Surya Kund, or reservoir, was constructed for ritualistic ablutions before entering the temple. The Sabha Mandap, or assembly hall, is adorned with intricately carved pillars depicting scenes from Hindu mythology, including the Ramayana and Mahabharata. The Guda Mandap, or sanctum sanctorum, houses the idol of Surya, positioned in such a way that it receives the first rays of the rising sun during the equinoxes.</p>
+      </p>
+        
+
+        <div id="show-more" class="hidden">
+            
+          </div>
+          <div id="show-more-btn" class="show-more-btn" onclick="showMore()">
+            Know more
+          </div>
+        
+      </div>
+      
+    </div>
+
+    <div class="content">
+      <div class="content-details" >
+        <h2>Architecture</h2>
+       
+        <p id="content">The temple's architecture showcases the distinctive Maru-Gurjara style, prevalent in the Solanki dynasty's architectural endeavors. This style amalgamates elements of Maratha and Gurjara architectural traditions, resulting in a unique and aesthetically appealing structure.</p>
+        <p>The temple complex consists of three primary structures: the Surya Kund (Sun Tank), Sabha Mandap (Assembly Hall), and Guda Mandap (Sanctum Sanctorum). Each component contributes to the overall architectural grandeur of the temple.</p>
+        <p>The architectural splendor of the Sun Temple in Modhera stands as a testament to the creative genius and spiritual devotion of ancient Indian civilization, attracting visitors from far and wide to marvel at its timeless beauty and cultural heritage.</p>
+      </div>
+      </div>
+    
+    
+      <div class="content">
+        <div class="content-details" >
+          <h2>TIMINGS</h2>
+         
+          <p id="content">
+            The timings to visit Modhera Sun Temple is from 7 AM in the morning to 6 PM in the evening. If we talk about the perfect month to visit this temple, the best time would be from October – March. It is recommended to travel to Gujarat during winters when the weather is pleasant. Moreover, if you want to experience the famous Modhera Dance Festival, you should plan your visit in the month of January. That way, you’ll be able to experience the Modhera Dance Festival takes place every year at the sun temple in Gujarat after the Uttarayan.
+          </p>
+          
+       </div>
+      </div>
+    
+      
+        </div>
+
+        <div class="content">
+          <div class="content-details" >
+            <h2>NEARBY ATTRACTIONS</h2>
+           
+            <p id="content">
+              
+    Venturing a bit further from Modhera, the town of Sidhpur beckons with its beautifully carved havelis, ancient temples, and picturesque bathing ghats along the Saraswati River. The Rudra Mahalaya Temple, dedicated to Lord Shiva, stands as a testament to the town's rich history and religious significance. For those fortunate enough to visit in January, the annual Modhera Dance Festival offers a captivating showcase of classical dance forms against the backdrop of the Sun Temple, adding a vibrant cultural dimension to the ancient site. Whether exploring architectural marvels, engaging with local culture, or witnessing mesmerizing dance performances, the attractions near the Sun Temple promise a memorable and enriching experience for all who visit.
+    </p>
+            </div>
+        </div>
+        
+
+        <div class="content">
+          <div class="content-details" >
+            <h2>PHOTO GALLERY</h2>
+          </div>
+          </div>
+       
+        <div class="full-img" id="fullImgBox">
+          <img src="suntemple2.jpg" id="fullImg"/>
+          <span onclick="closeFullImg()">&times;</span>
+      </div>
+      <div class="img-gallery">
+          <img src="suntemple2.jpg" id="i1"  onclick="openFullImg(this)"/>
+          <img src="suntemple3.jpg" id="i2" onclick="openFullImg(this )"/>
+          <img src="suntemple4.jpg" id="i3" onclick="openFullImg(this )"/>
+          <img src="suntemple5.jpg" id="i4" onclick="openFullImg(this )"/>
+          <img src="suntemple12.jpg" id="i5" onclick="openFullImg(this )"/>
+          <img src="suntemple8.jpg" id="i6" onclick="openFullImg(this )"/>
+      </div>
+
+      <div class="content">
+        <div class="content-details" >
+          <h2>TRANSPORT GUIDE</h2>
+        </div>
+        </div>
+     
+    <div class="transport-section">
+      <h2>How to Get There</h2>
+      <div class="transport-method">
+          <img src="../bus.png" alt="Road Icon" >
+          <div>
+            <p><strong>By Road</strong></p>
+            <p>From Ahmedabad: Modhera is approximately 100 kilometers from Ahmedabad, and the journey by road takes about 2 to 3 hours. Visitors can drive their own vehicle, hire a taxi, or take a bus from Ahmedabad to reach Modhera.
+            </p>
+        </div>
+      </div>
+      <div class="transport-method">
+          <img src="../train.png" alt="Train Icon">
+          <div>
+            <p><strong>By Train</strong></p>
+            <p>The nearest railway station to Modhera is the Mehsana Junction Railway Station, located around 25 kilometers away. Mehsana Junction is well-connected to major cities in Gujarat and other parts of India. From the railway station, visitors can hire a taxi or take a bus to reach Modhera. The journey by road takes approximately 30 to 45 minutes.</p>
+        </div>
+      </div>
+      <div class="transport-method">
+          <img src='../air.png' alt="Airplane Icon">
+          <div>
+            <p><strong>By Air</strong></p>
+            <p>The nearest airport to Modhera is the Sardar Vallabhbhai Patel International Airport in Ahmedabad, Gujarat, located approximately 100 kilometers away. From the airport, visitors can hire a taxi or use private transportation services to reach Modhera. The journey takes about 2 to 3 hours, depending on traffic conditions.</p>
+        </div>
+   </div>
+  </div>
+  
+    
+    <script>
+      function showMore() {
+        var contentDiv = document.getElementById("content");
+        var showMoreDiv = document.getElementById("show-more");
+        var showMoreBtn = document.getElementById("show-more-btn");
+
+        if (showMoreDiv.classList.contains("hidden")) {
+          // Fetch additional content dynamically here
+          var additionalContent = `
+         
+          
+          <p>Throughout its history, the Sun Temple has endured the ravages of time, including invasions and natural disasters. Despite this, its grandeur and architectural brilliance continue to attract visitors from around the world. Today, the Sun Temple of Modhera stands as a UNESCO World Heritage Site and a symbol of India's rich cultural heritage, showcasing the spiritual and artistic legacy of ancient Gujarat.
+          </p>
+
+            `;
+          showMoreDiv.innerHTML = additionalContent;
+          showMoreDiv.classList.remove("hidden");
+          showMoreBtn.textContent = "";
+        } else {
+          showMoreDiv.classList.add("hidden");
+          showMoreBtn.textContent = "Know more";
+        }
+
+
+        
+      }var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    var xyz;
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic.src;
+      xyz = document.getElementById(pic.id);
+      xyz.classList.add('close');
+    }
+
+    function closeFullImg(pic) {
+      fullImgBox.style.display = "none";
+      xyz.classList.remove('close')
+    }
+    </script>
+    </body>
+</html>

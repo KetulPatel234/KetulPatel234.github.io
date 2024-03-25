@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baga Beach</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+
+    }
+
+    .header {
+      height: 400px;
+      /* Adjust height as needed */
+      background-image: url(baga_beach_bg.png);
+      background-size: cover;
+      background-position: center;
+      align-items: center;
+      /* Add this line */
+    }
+
+    .header h1 {
+      color: white;
+      position: relative;
+      top: 310px;
+      left: 40px;
+      font-size: 3em;
+    }
+
+    .content {
+      padding: 20px;
+      font-size: 17px;
+      color: black;
+      text-align: justify;
+    }
+
+    .content-details {
+      padding: 0px 100px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .show-more-btn {
+      display: block;
+      /* margin: 20px auto;
+            padding: 20px; */
+      cursor: pointer;
+      color: blue;
+    }
+
+    .img-gallery {
+      width: 70%;
+      margin: 40px auto 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      z-index: 100;
+    }
+
+    .img-gallery img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      transition: transform 0.1s;
+      /* Adding transition for smoother effect */
+    }
+
+    .img-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .full-img {
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .full-img img {
+      width: 90%;
+      max-width: 650px;
+
+    }
+
+    .full-img span {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+
+    .transport-section {
+      margin-top: 0px;
+      margin-left: 220px;
+      margin-right: 220px;
+      background-color: #e1c5c5;
+      /* Change the background color as needed */
+      padding-top: 20px;
+      text-align: justify;
+      color: rgb(21, 20, 20);
+      height: 100vh;
+    }
+
+    .transport-section h2 {
+      color: #100f0f;
+      /* Change the text color as needed */
+      text-align: center;
+    }
+
+    .transport-method {
+      display: flex;
+      align-items: center;
+      margin: 90px;
+    }
+
+    .transport-method img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .close {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Baga Beach</h1>
+
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+
+      <p id="content">
+      <h2>HISTORY</h2>
+
+        Discovered by the Hippies, Baga became an important stopover on the Hippie trail during the sixties and
+        seventies. Years after Hippies popularized it; Baga continues to retain the ethos and characteristics of the
+        movement minus the decadence associated with it. Baga is located in North Goa, 16 km from the state capital
+        Panaji. Calangute Beach is to its south and Anjuna Beach to its north. The Baga river skirts the sides of the
+        beach, ultimately to flow into the Arabian Sea. Baga Beach starts right where Calangute ends. However, it’s hard
+        to pinpoint exactly where. Baga figures high on tourist itineraries because of its sun and the sea, flea market,
+        nightlife and for its watering holes and eateries.</p><p id="content"></p> Baga is home to some of the biggest hot-spots by night in
+        Goa. Café Tito and Cafe Mambo have achieved iconic status and among the most important things to do suggested by
+        tour guides. Nightlife is very vibrant in Baga. The sight of shops on the white sandy beach lit with lamps,
+        milling crowd and live bands, all add up to the carnival-like ambiance. By day, the beach is a paradise for
+        tourists who wish to soak in some sun and the sand. Apart from the scenic pleasures, Baga Beach offers lots of
+        activities for the tourists to indulge in. Water sports are a huge attraction. Para sailing, wakeboarding,
+        windsurfing, kite surfing, or a ride on a jet ski, travelers have a plethora of choice. Dolphin spotting and
+        island trips are other options you could try during your stay in Baga. Baga became a traveler’s cliché in the
+        ’60s and early’70s. It was the hippies who discovered the pristine beach. They spread the word around resulting
+        in hordes of European tourists descending on the golden sands of Baga. Thumbing or hitchhiking and traveling by
+        cheap transport are things of the past. Baga is no more the watering hole for Hippies.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="content">
+    <div class="content-details">
+      <h2>Tourist Attractions</h2>
+
+      <p id="content">
+        This beach is extremely popular for its salty bath. You can find many tourists enjoying taking a dip into the
+        sea water from time to time as they lounge at the sun beds. The nightlife here is also quite exciting. Baga
+        house famous Café Tito and Cafe Mambo as well, places which are visited by almost every tourists in Goa.
+        <br><br>
+        The Saturday night Flea Market at the Baga beach is extremely famous. Here you will find stalls and small shacks
+        selling almost everything under the sun at affordable prices. Whether you want to take a souvenir home or buy
+        some clothes to jewelry or want to relish some authentic sea-food or just want have a new haircut or get your
+        future revealed by tarot card reader, here you will get ample of choices for everything.
+        <br><br>
+        For accommodation, there are various choices. You can have beach shacks if you are looking for something within
+        low budget. These shacks are located quite close to the beach which allow you o spend as much as time as you
+        want on the beach, as it also reduces the travel time. Tourists can also choose from the three to five star
+        hotels if they want a luxurious stay. Royal Goans Club and the Marinha Douradoa Resort Complex are two of the
+        choices.
+      </p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+      <h2>Timings</h2>
+
+      <p id="content">
+        There are no specific timings for Baga Beach. Being a public beach in Goa, there are no restrictions on Baga
+        Beach timings. The best time to visit Baga Beach is from October through March. This is when the water
+        temperature is ideal for a swim or water sports. Beachcombers can enjoy the beautiful sunset and then, later on,
+        indulge in the legendary Baga Beach nightlife. There is also a popular Baga Beach night market to pick up
+        souvenirs.
+
+      <ul>
+        <li>Every day 06:00 am to 10:00 pm</li>
+      </ul>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="content">
+    <div class="content-details">
+      <h2>PHOTO GALLERY</h2>
+    </div>
+  </div>
+
+  <div class="full-img" id="fullImgBox">
+    <img src="baga_beach1.png" id="fullImg" />
+    <span onclick="closeFullImg()">&times;</span>
+  </div>
+  <div class="img-gallery">
+    <img src="baga_beach1.png" id="i1" onclick="openFullImg(this)" />
+    <img src="baga_beach2.png" id="i2" onclick="openFullImg(this)" />
+    <img src="baga_beach3.png" id="i3" onclick="openFullImg(this)" />
+    <img src="baga_beach4.png" id="i4" onclick="openFullImg(this)" />
+    <img src="baga_beach5.png" id="i5" onclick="openFullImg(this)" />
+    <img src="baga_beach6.png" id="i6" onclick="openFullImg(this)" />
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+      <h2>TRANSPORT GUIDE</h2>
+    </div>
+  </div>
+
+  <div class="transport-section">
+    <h2>How to Get There</h2>
+    <div class="transport-method">
+      <img src="../bus.png" alt="Road Icon">
+      <div>
+        <p><strong>By Road</strong></p>
+        <p>A trip to Goa is a dream for many and if you are planning one soon, then the following information will help
+          you out. Baga is well-connected by motorable roads and a network of national highways. You can choose to
+          travel via inter-state tourist buses, or, you can hire a taxi or self-drive as per your convenience.</p>
+      </div>
+    </div>
+    <div class="transport-method">
+      <img src="../train.png" alt="Train Icon">
+      <div>
+        <p><strong>By Train</strong></p>
+        <p>Distance from Dabolim railway station. 40 Kms</p>
+      </div>
+    </div>
+    <div class="transport-method">
+      <img src='../air.png' alt="Airplane Icon">
+      <div>
+        <p><strong>By Air</strong></p>
+        <p>
+          Distance from Dabolim airport. 35 Kms</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    
+    
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    var xyz;
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic.src;
+      xyz = document.getElementById(pic.id);
+      xyz.classList.add('close');
+    }
+
+    function closeFullImg(pic) {
+      fullImgBox.style.display = "none";
+      xyz.classList.remove('close')
+    }
+
+  </script>
+
+</body>
+
+</html>
