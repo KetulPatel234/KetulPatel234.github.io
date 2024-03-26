@@ -1,8 +1,3 @@
-function openFile(file_name) {
-    window.open(file_name)
-}
-
-
 function darkMode(dark_link, event) {
     event.preventDefault();
     var body = document.body;
