@@ -48,17 +48,14 @@
   align-items: center;
   position: relative;
   height: 100vh;
-  margin-top: 0px !important;
 }
 
 #places_carousel {
   max-width: 65%;
-  margin: 0 auto;
-  width: auto;
 }
 
 #places_carousel_back img {
-  filter: blur(7px);
+  filter: brightness(30%) blur(4px) contrast(140%);
 }
 
 #places_carousel_back {
@@ -103,7 +100,6 @@
 #carousel-states {
   width: 100% !important;
   height: 100vh !important;
-  /* background-color: black; */
 }
 
 #carousel-states .carousel-item {

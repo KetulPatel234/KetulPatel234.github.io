@@ -19,7 +19,7 @@
 
 .nav-link:hover {
     color: black !important;
-    font-weight: 700 !important; 
+    font-weight: 700 !important;
 }
 
 .navbar-toggler {
@@ -32,8 +32,6 @@
 }
 
 #d1,
-#d3,
-#d2,
 #benefits {
     height: 40em !important;
 }
@@ -77,11 +75,18 @@
     padding: 15px 75px;
     font-weight: bold;
     color: #8338ec;
+    border: none !important;
+    outline: none !important;
 }
 
+#build_resume_btn:focus {
+    border: none;
+    box-shadow: 0 0 5px rgba(131, 56, 236, 0.5);
+  }
+
 #build_resume_btn:hover {
-    color: black;
-    border: 3px solid black;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: black;
 }
 
 #benefits {
@@ -98,6 +103,61 @@
     margin-bottom: 10px;
 }
 
+.dark-mode .navbar-brand,
+.dark-mode {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark-mode,
+.dark-mode .navbar,
+.dark-mode #benefits,
+.dark-mode #d3 {
+    background-color: black !important;
+}
+
+.dark-mode #build_resume_btn {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.dark-mode #build_resume_btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.dark-mode #up_benefit img {
+    padding: 20px;
+    width:80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.dark-mode #benefits img {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+
+.dark-mode .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark-mode #d2 h1,
+.dark-mode #d2 p {
+    color: black;
+}
+
+@media (max-width:1130px) {
+    .navbar-brand {
+        font-size: 0.8em !important;
+    }
+
+    .nav-link {
+        font-size: 0.6em !important;
+    }
+}
 
 @media (max-width:1058px) {
     .navbar-brand {
@@ -125,7 +185,7 @@
     }
 }
 
-@media (max-width:812px) {
+@media (max-width:860px) {
     .navbar-brand {
         font-size: 0.7em !important;
         margin: 0px 15px 0px 30px !important;
@@ -159,7 +219,7 @@
         max-width: 328px;
     }
 
-    #d2{
+    #d2 {
         margin-bottom: 10px;
     }
 }

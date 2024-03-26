@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume Builder</title>
-  <link href="style.css" rel="stylesheet" />
-  <script src="script.js"></script>
+  <link href="css/style.css" rel="stylesheet" id="style_css" />
+  <script src="js/script.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -14,8 +14,8 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body>
-  
+<body id="body">
+
   <nav class="navbar navbar-expand-md navbar-light sticky-top">
     <a class="navbar-brand" href="#">Resume Builder</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtop">
@@ -30,10 +30,10 @@
           <a class="nav-link" href="#">Themes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Dark Mode</a>
+          <a class="nav-link" href="#" onclick="darkMode(this,event)">Dark Mode</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">How To Use</a>
+          <a class="nav-link" href="select_template.html">Build My Resume</a>
         </li>
       </ul>
     </div>
@@ -47,7 +47,9 @@
           <p>Easily create a professional and personalized resume in 15 minutes. Choose from various themes,explore
             dark
             mode, and make your resume stand out. Get started now!</p>
-          <button class="btn btn-light" id="build_resume_btn">Build Resume Now</button>
+          <button class="btn btn-light" id="build_resume_btn" onclick="openFile('select_template.html')">
+            Build ResumeNow
+          </button>
         </div>
       </div>
     </div>
@@ -55,10 +57,10 @@
       <div class="d-flex justify-content-center h-100">
         <div class="text-center">
           <div>
-            <img src="rb1.avif" id="sample-resume" alt="" height="500px">
+            <img src="images/sample_resume.avif" id="sample-resume" alt="" height="500px">
           </div>
           <div id="up_benefit">
-            <img src="line-chart.png" alt="" height="50px">
+            <img src="images/line-chart.png" alt="" height="50px">
             <p>Make your chances to get selected higher</p>
           </div>
         </div>
@@ -68,23 +70,27 @@
 
   <div id="benefits" class="row">
     <div id="b1" class="col-md-6">
-      <img src="approved.png" id="bi1" alt="Image not Found" height="100px">
+      <img src="images/approved.png" id="bi1" alt="Image not Found" height="100px">
       <div>Make your new and professional reusme easily in 15 minutes</div>
     </div>
     <div id="b2" class="col-md-6">
-      <img src="education.png" id="bi2" alt="Image not Found" height="100px">
+      <img src="images/education.png" id="bi2" alt="Image not Found" height="100px">
       <div>Enter your education details and add as many fields you want</div>
     </div>
     <div id="b3" class="col-md-6">
-      <img src="important.png" id="bi3" alt="Image not Found" height="100px">
+      <img src="images/important.png" id="bi3" alt="Image not Found" height="100px">
       <div>Recruiter can easily find your key points</div>
     </div>
     <div id="b4" class="col-md-6">
-      <img src="job.png" id="bi4" alt="Image not Found" height="100px">
+      <img src="images/job.png" id="bi4" alt="Image not Found" height="100px">
       <div>Make higher your chances of getting the job secured</div>
     </div>
   </div>
-
+  <!-- add sample div section about various professions -->
+  <!-- add dark mode  -->
+  <footer>
+    <!-- add footer -->
+  </footer>
 </body>
 
 </html>
