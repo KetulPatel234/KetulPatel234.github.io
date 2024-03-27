@@ -47,15 +47,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 100vh;
 }
 
 #places_carousel {
   max-width: 65%;
+  border-radius: 20px;
 }
 
 #places_carousel_back img {
-  filter: brightness(30%) blur(4px) contrast(140%);
+  filter: brightness(30%) blur(3px);
 }
 
 #places_carousel_back {

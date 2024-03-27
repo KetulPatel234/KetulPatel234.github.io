@@ -3,6 +3,11 @@
     background-color: white;
 }
 
+.row{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
 .navbar-brand {
     font-size: 1.1em !important;
     color: black !important;
@@ -102,6 +107,23 @@
 #benefits img {
     margin-right: 20px;
     margin-bottom: 10px;
+}
+
+footer{
+    height:500px;
+    width: 100%;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    background-color: wheat;
+}
+
+footer .row{
+    width: 100%;
 }
 
 .dark-mode .navbar-brand,
