@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../state.css">
     <script>
-        function openPage(pageName){
-            window.open(pageName,'_blank')
+        function openPage(pageName) {
+            window.open(pageName, '_blank')
         }
     </script>
 </head>
@@ -32,16 +32,13 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About India</a>
+                    <a class="nav-link" href="#" target="_blank">About India</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link" href="../../contact_us/contact.html">Contact us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Booking</a>
+                    <a class="nav-link" href="../../inquiry/inquiry.html">Inquiry</a>
                 </li>
             </ul>
         </div>
@@ -66,7 +63,7 @@
         <div class="d1 col-md-6">
             <img src="../states_images/dwarka.jpg" alt="Image Not Found" onclick="openPage('Dwarka/dwarka.html')">
         </div>
-        <div class="d2 col-md-6">
+        <div class="d1 col-md-6">
             <div class="place_name">
                 Dwarka
             </div>
@@ -89,7 +86,7 @@
     <hr>
 
     <div class="o-div row">
-        <div class="d1 col-md-6">
+        <div class="d1 col-md-6 order-md-1 order-2">
             <div class="place_name">
                 Statue Of Unity
             </div>
@@ -109,8 +106,9 @@
                 View More
             </button>
         </div>
-        <div class="d2 col-md-6">
-            <img src="../states_images/sou.jpg" alt="Image Not Found" onclick="openPage('StatueOfUnity/statue_of_unity.html')">
+        <div class="d1 col-md-6 order-md-2 order-1">
+            <img src="../states_images/sou.jpg" alt="Image Not Found"
+                onclick="openPage('StatueOfUnity/statue_of_unity.html')">
         </div>
     </div>
 
@@ -118,9 +116,10 @@
 
     <div class="o-div row">
         <div class="d1 col-md-6">
-            <img src="../states_images/sun_temple.jpg" alt="Image Not Found" onclick="openPage('SunTemple/sun_temple.html')">
+            <img src="../states_images/sun_temple.jpg" alt="Image Not Found"
+                onclick="openPage('SunTemple/sun_temple.html')">
         </div>
-        <div class="d2 col-md-6">
+        <div class="d1 col-md-6">
             <div class="place_name">
                 Sun Temple of Modhera
             </div>
@@ -149,7 +148,7 @@
     <hr>
 
     <div class="o-div row">
-        <div class="d1 col-md-6">
+        <div class="d1 col-md-6 order-md-1 order-2">
             <div class="place_name">
                 Gir National Park
             </div>
@@ -161,14 +160,13 @@
                 mammals, and reptiles. Visitors to Gir can embark on thrilling safaris through its dense forests,
                 catching glimpses of majestic lions, elusive leopards, and graceful deer amidst the pristine wilderness.
                 The park's tranquil surroundings and scenic vistas offer a sanctuary for nature lovers and wildlife
-                enthusiasts seeking solace in the lap of nature. A journey to Gir National Park is not just an adventure
-                but also a testament to India's commitment to wildlife conservation and ecological sustainability.
+                enthusiasts seeking solace in the lap of nature. 
             </p>
             <button class="btn" onclick="openPage('Gir/gir.html')">
                 View More
             </button>
         </div>
-        <div class="d2 col-md-6">
+        <div class="d1 col-md-6 order-md-2 order-1">
             <img src="../states_images/gir.jpg" alt="Image Not Found" onclick="openPage('Gir/gir.html')">
         </div>
     </div>
@@ -179,7 +177,7 @@
         <div class="d1 col-md-6">
             <img src="../states_images/saputara.jpg" alt="Image Not Found" onclick="openPage('Saputara/saputara.html')">
         </div>
-        <div class="d2 col-md-6">
+        <div class="d1 col-md-6">
             <div class="place_name">
                 Saputara Hill Station
             </div>
@@ -200,6 +198,62 @@
             </button>
         </div>
     </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-center ">
+                    <h6>About</h6>
+                    <p class="about-text">
+                        Explore Bharat is a platform dedicated to promoting tourism and cultural exploration across
+                        India. Our mission is to provide travelers with comprehensive information and resources to
+                        discover the rich heritage, diverse landscapes, and vibrant cultures of Bharat (India).
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3 text-center ">
+                    <h6>USEFUL LINKS</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" target="_blank">About Inida</a></li>
+                        <li><a href="../../contact_us/contact.html">Contact Us</a></li>
+                        <li><a href="../../inquiry/inquiry.html">Inquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Add back the categories -->
+                <div class="col-xs-6 col-md-3 text-center ">
+                    <h6>States</h6>
+                    <ul class="footer-links">
+                        <li><a href="../../explore_by_states/Gujarat/gujarat.html">Gujarat</a></li>
+                        <li><a href="../../explore_by_states/Rajasthan/rajasthan.html">Rajasthan</a></li>
+                        <li><a href="../../explore_by_states/Kashmir/kashmir.html">Kashmir</a></li>
+                        <li><a href="../../explore_by_states/Goa/goa.html">Goa</a></li>
+                        <li><a href="../../explore_by_states/UttarPradesh/uttar_pradesh.html">UttarPradesh</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">
+                        Copyright &copy; All Rights Reserved by
+                        <a href="#">Explore Bharat</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

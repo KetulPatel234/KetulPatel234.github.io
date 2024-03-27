@@ -27,16 +27,13 @@
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About India</a>
+          <a class="nav-link" href="#" target="_blank">About India</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link" href="contact_us/contact.html" target="_blank">Contact us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Booking</a>
+          <a class="nav-link" href="inquiry/inquiry.html" target="_blank">Inquiry</a>
         </li>
       </ul>
     </div>
@@ -79,7 +76,8 @@
         <button type="button" data-bs-target="#places_carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" onclick="openPage('explore_by_states/Gujarat/StatueOfUnity/statue_of_unity.html')">
+        <div class="carousel-item active"
+          onclick="openPage('explore_by_states/Gujarat/StatueOfUnity/statue_of_unity.html')">
           <img src="images/sou_updated.jpg" class="d-block w-100" alt="Slide 1">
           <div class="carousel-caption">
             <h5>STATUE OF UNITY</h5>
@@ -98,7 +96,7 @@
           </div>
         </div>
         <div class="carousel-item" onclick="openPage('explore_by_states/Goa/BagaBeach/baga_beach.html')">
-          <img src="images/goa_updated.jpg" class="d-block w-100" alt="Slide 4" >
+          <img src="images/goa_updated.jpg" class="d-block w-100" alt="Slide 4">
           <div class="carousel-caption">
             <h5>GOA BEACH</h5>
           </div>
@@ -151,40 +149,97 @@
 
   <div id="carousel-states" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active" onclick="openPage('explore_by_states/Gujarat/gujarat.html')">
-            <div class="carousel-caption">
-                Gujarat
-            </div>
+      <div class="carousel-item active" onclick="openPage('explore_by_states/Gujarat/gujarat.html')">
+        <div class="carousel-caption">
+          Gujarat
         </div>
-        <div class="carousel-item" onclick="openPage('explore_by_states/Rajasthan/rajasthan.html')">
-            <div class="carousel-caption">
-                Rajasthan
-            </div>
+      </div>
+      <div class="carousel-item" onclick="openPage('explore_by_states/Rajasthan/rajasthan.html')">
+        <div class="carousel-caption">
+          Rajasthan
+        </div>
+      </div>
+
+      <div class="carousel-item" onclick="openPage('explore_by_states/UttarPradesh/uttar_pradesh.html')"">
+            <div class=" carousel-caption">
+        Uttar Pradesh
+      </div>
+    </div>
+    <div class="carousel-item" onclick="openPage('explore_by_states/Goa/goa.html')"">
+            <div class=" carousel-caption">
+      Goa
+    </div>
+  </div>
+  <div class="carousel-item" onclick="openPage('explore_by_states/Kashmir/kashmir.html')">
+    <div class="carousel-caption">
+      Kashmir
+    </div>
+  </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-states" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel-states" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 text-center ">
+          <h6>About</h6>
+          <p class="about-text">
+            Explore Bharat is a platform dedicated to promoting tourism and cultural exploration across
+            India. Our mission is to provide travelers with comprehensive information and resources to
+            discover the rich heritage, diverse landscapes, and vibrant cultures of Bharat (India).
+          </p>
         </div>
 
-        <div class="carousel-item" onclick="openPage('explore_by_states/UttarPradesh/uttar_pradesh.html')"">
-            <div class="carousel-caption">
-                Uttar Pradesh
-            </div>
+        <div class="col-xs-6 col-md-3 text-center ">
+          <h6>USEFUL LINKS</h6>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" target="_blank">About Inida</a></li>
+            <li><a href="contact_us/contact.html" target="_blank">Contact Us</a></li>
+            <li><a href="inquiry/inquiry.html" target="_blank">Inquiry</a></li>
+          </ul>
         </div>
-        <div class="carousel-item" onclick="openPage('explore_by_states/Goa/goa.html')"">
-            <div class="carousel-caption">
-                Goa
-            </div>
+
+        <!-- Add back the categories -->
+        <div class="col-xs-6 col-md-3 text-center ">
+          <h6>States</h6>
+          <ul class="footer-links">
+            <li><a href="explore_by_states/Gujarat/gujarat.html" target="_blank">Gujarat</a></li>
+            <li><a href="explore_by_states/Rajasthan/rajasthan.html" target="_blank">Rajasthan</a></li>
+            <li><a href="explore_by_states/Kashmir/kashmir.html" target="_blank">Kashmir</a></li>
+            <li><a href="explore_by_states/Goa/goa.html" target="_blank">Goa</a></li>
+            <li><a href="explore_by_states/UttarPradesh/uttar_pradesh.html" target="_blank">UttarPradesh</a></li>
+          </ul>
         </div>
-        <div class="carousel-item" onclick="openPage('explore_by_states/Kashmir/kashmir.html')">
-            <div class="carousel-caption">
-                Kashmir
-            </div>
-        </div>
+      </div>
+      <hr />
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-states" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carousel-states" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
-</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">
+            Copyright &copy; All Rights Reserved by
+            <a href="#">Explore Bharat</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
 </body>
 
