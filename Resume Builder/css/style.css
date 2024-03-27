@@ -3,7 +3,7 @@
     background-color: white;
 }
 
-.row{
+.row {
     margin: 0px !important;
     padding: 0px !important;
 }
@@ -32,6 +32,10 @@
     margin-right: 20px !important;
 }
 
+.navbar-toggler:focus {
+    box-shadow: 0 0 8px #8338ec !important;
+}
+
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 131, 56, 236, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
@@ -39,7 +43,7 @@
 #d1,
 #benefits {
     height: 41em;
-    width:100%;
+    width: 100%;
 }
 
 #d2 {
@@ -88,7 +92,7 @@
 #build_resume_btn:focus {
     border: none;
     box-shadow: 0 0 5px rgba(131, 56, 236, 0.5);
-  }
+}
 
 #build_resume_btn:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -109,21 +113,29 @@
     margin-bottom: 10px;
 }
 
-footer{
-    height:500px;
-    width: 100%;
+footer {
     background-color: black;
-    color:white;
-    display: flex;
-    justify-content: space-between;
+    color: #ffffff;
+    padding: 20px 0;
 }
 
-footer div{
-    background-color: wheat;
+footer .section p {
+    margin-bottom: 0;
+    max-width: 300px;
 }
 
-footer .row{
-    width: 100%;
+footer .section {
+    margin-bottom: 20px;
+}
+
+footer a:hover{
+    color:lime;
+    font-weight: bold;
+}
+
+footer p span{
+    color:lime;
+    font-weight: 700;
 }
 
 .dark-mode .navbar-brand,
@@ -150,7 +162,7 @@ footer .row{
 
 .dark-mode #up_benefit img {
     padding: 20px;
-    width:80px;
+    width: 80px;
     height: 80px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
@@ -171,6 +183,20 @@ footer .row{
 .dark-mode #d2 p {
     color: black;
 }
+
+.dark-mode footer{
+    background-color: #8338ec;
+    color:black;
+}
+
+.dark-mode footer a{
+    color:black;
+}
+
+.dark-mode footer a:hover{
+    color:lime;
+}
+
 
 @media (max-width:1130px) {
     .navbar-brand {
@@ -244,6 +270,13 @@ footer .row{
 
     #d2 {
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width:400px){
+    #build_resume_btn{
+        font-size: 17px;
+        margin-top: 30px;
     }
 }
 
