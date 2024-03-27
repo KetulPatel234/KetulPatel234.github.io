@@ -13,7 +13,7 @@
     <style>
         #branding {
             height: 70px;
-            border: 2px solid;
+            width: 100%;
         }
 
         #site-branding {
@@ -23,12 +23,18 @@
             margin-left: 50px;
         }
 
+        #site-branding:hover {
+            cursor: pointer;
+        }
+
         #select-outer {
+            width: 100%;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
             color: black;
         }
 
@@ -44,22 +50,41 @@
         }
 
         #options div {
-            height: 600px;
-            max-width: 500px;
-            border: 2px solid black;
-            margin: 10px auto;
+            height: 500px;
+            max-width: 400px;
         }
 
         #options div:hover {
             cursor: pointer;
         }
+
+        #options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #options .col-md-6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #options div img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border: 5px solid black;
+            border-radius: 20px;
+        }
     </style>
 
     <script>
-        selected_template = 'template1'
+        var selected_template = null;
         function goToBuildResume(template_name) {
             selected_template = template_name
-            window.open('build_resume.html','_self');
+            localStorage.setItem('selected_template', selected_template);
+            window.open('build_resume.html', '_self');
         }
     </script>
 </head>
@@ -77,39 +102,14 @@
         </div>
         <div id="options" class="row">
             <div class="col-md-6" id="template1" onclick="goToBuildResume('template1')">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque delectus deserunt quod quidem nobis?
-                Iusto molestiae pariatur sequi hic sit reiciendis ut nemo in sunt minima? Tempora ipsam rem odit
-                similique sunt impedit quisquam ad et neque culpa placeat est mollitia, commodi recusandae voluptates
-                minima ipsa in unde, doloribus facere nesciunt ab! At natus sunt reprehenderit. Accusantium quos id vel
-                beatae exercitationem quisquam maiores saepe iusto sint reiciendis nisi obcaecati commodi voluptates,
-                possimus cum suscipit aliquid et, excepturi magnam atque eum qui a. Maiores nesciunt vel hic, quos
-                molestias non, expedita delectus, qui nobis repudiandae mollitia quo error sed consequatur similique
-                obcaecati cumque deleniti eius rem! Distinctio autem consequuntur asperiores ut eligendi porro similique
-                possimus voluptas labore, ullam doloribus amet culpa voluptatibus, tempora quam laboriosam cupiditate
-                quia blanditiis id in consectetur? Enim eaque, quia ipsam fugiat eligendi laborum repellendus numquam
-                soluta non totam. Nisi minima voluptatem eaque quis minus fugit eligendi temporibus dolor modi obcaecati
-                accusamus natus aliquid nulla sequi, cum ad, debitis itaque quo? Consequuntur nam est illum, incidunt
-                dolores tenetur culpa, atque ea fugiat impedit veritatis quibusdam quos praesentium magnam pariatur
-                facilis. Exercitationem
+                <img src="images/Homepage-5.webp" alt="">
             </div>
             <div class="col-md-6" id="template2" onclick="goToBuildResume('template2')">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque delectus deserunt quod quidem nobis?
-                Iusto molestiae pariatur sequi hic sit reiciendis ut nemo in sunt minima? Tempora ipsam rem odit
-                similique sunt impedit quisquam ad et neque culpa placeat est mollitia, commodi recusandae voluptates
-                minima ipsa in unde, doloribus facere nesciunt ab! At natus sunt reprehenderit. Accusantium quos id vel
-                beatae exercitationem quisquam maiores saepe iusto sint reiciendis nisi obcaecati commodi voluptates,
-                possimus cum suscipit aliquid et, excepturi magnam atque eum qui a. Maiores nesciunt vel hic, quos
-                molestias non, expedita delectus, qui nobis repudiandae mollitia quo error sed consequatur similique
-                obcaecati cumque deleniti eius rem! Distinctio autem consequuntur asperiores ut eligendi porro similique
-                possimus voluptas labore, ullam doloribus amet culpa voluptatibus, tempora quam laboriosam cupiditate
-                quia blanditiis id in consectetur? Enim eaque, quia ipsam fugiat eligendi laborum repellendus numquam
-                soluta non totam. Nisi minima voluptatem eaque quis minus fugit eligendi temporibus dolor modi obcaecati
-                accusamus natus aliquid nulla sequi, cum ad, debitis itaque quo? Consequuntur nam est illum, incidunt
-                dolores tenetur culpa, atque ea fugiat impedit veritatis quibusdam quos praesentium magnam pariatur
-                facilis. Exercitationem
+                <img src="images/template2.webp" alt="">
             </div>
         </div>
     </div>
+
 
 </body>
 
