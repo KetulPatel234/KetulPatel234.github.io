@@ -1,31 +1,3 @@
-.navbar {
-  font-family: "Protest Riot", sans-serif;
-  position: sticky;
-  top: 0px;
-  z-index: 1;
-  font-size: 20px;
-}
-
-.navbar-brand {
-  font-family: "Protest Riot", sans-serif;
-  margin-left: 30px;
-  font-size: 25px;
-}
-
-.nav-link {
-  font-family: "Protest Riot", sans-serif;
-  position: relative;
-  color: #a0a0a0;
-  text-decoration: none;
-  padding: 0 20px;
-  margin: 0px 20px;
-  letter-spacing: 0.5px;
-}
-
-.navbar-toggler {
-  font-family: "Protest Riot", sans-serif;
-  margin-right: 15px !important;
-}
 .categories-h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
