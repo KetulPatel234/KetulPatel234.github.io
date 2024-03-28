@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basilica of Bom Jesus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+
+    }
+
+    .header {
+      height: 400px;
+      /* Adjust height as needed */
+      background-image: url(basilica_church-background.jpg);
+      background-size: cover;
+      background-position: center;
+      align-items: center;
+      /* Add this line */
+    }
+
+    .header h1 {
+      color: white;
+      position: relative;
+      top: 310px;
+      left: 40px;
+      font-size: 3em;
+    }
+
+    .content {
+      padding: 20px;
+      font-size: 17px;
+      color: black;
+      text-align: justify;
+    }
+
+    .content-details {
+      padding: 0px 100px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .show-more-btn {
+      display: block;
+      /* margin: 20px auto;
+            padding: 20px; */
+      cursor: pointer;
+      color: blue;
+    }
+
+    .img-gallery {
+      width: 70%;
+      margin: 40px auto 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      z-index: 100;
+    }
+
+    .img-gallery img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      transition: transform 0.1s;
+      /* Adding transition for smoother effect */
+    }
+
+    .img-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .full-img {
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .full-img img {
+      width: 90%;
+      max-width: 650px;
+
+    }
+
+    .full-img span {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+
+    .transport-section {
+      margin-top: 50px;
+          margin-left: 220px;
+          margin-right: 220px;
+          height: fit-content;
+      background-color: #e1c5c5;
+      /* Change the background color as needed */
+      padding-top: 20px;
+      text-align: justify;
+      color: rgb(21, 20, 20);
+      
+    }
+
+    .transport-section h2 {
+      padding: 60px 60px;
+      color: #100f0f;
+      /* Change the text color as needed */
+      text-align: center;
+    }
+
+    .transport-method {
+      padding-bottom: 50px;
+      display: flex;
+      align-items: center;
+      margin: 90px;
+    }
+
+    .transport-method img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .close {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Basilica of Bom Jesus</h1>
+
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+
+      <p id="content">
+      <h2>HISTORY</h2>
+      Construction work on the church began in 1594 , but still no one was able to put a cross upon the church. The church was consecrated in May 1605 by the archbishop, Dom Fr. Aleixo de Menezes. This world heritage monument has emerged as a landmark in the history of Christianity. It contains the body of St. Francis Xavier, a very close friend of St. Ignatius Loyola with whom he founded the Society of Jesus (the Jesuits). Francis Xavier died on Sancian Island, Chuandao (川島鎮), Taishan while en route to continental China on 3 December 1552. It is also believed that the body is of Thotagamuwe Sri Rahula Thera, a Sri Lankan Buddhist monk.
+
+      The body of Francis Xavier was first taken to Portuguese Malacca and two years later shipped back to Goa. It is said that the saint's body was as fresh as the day it was buried.The remains of the saint still attract a huge number of tourists (Christian and non-Christian alike) from all over the world, especially during the public viewing of his body every ten years (last held in 2016). The saint is said to have miraculous powers of healing.
+      
+          </p>
+    </div>
+
+  </div>
+
+
+  <div class="content">
+    <div class="content-details">
+      <h2>Tourist Attractions</h2>
+
+      <p id="content">
+        Saint Francis Xavier tomb is located in Church named Basilica of Bom Jesus. The church was declared as the World Heritage Site by United Nations Education, Scientific and Culture Organisation (UNESCO) in the year 1986. The Basilica of Bom Jesus is located in the State of Goa
+        This magnificent edifice stands as a superb example of Baroque architecture in Goa. The church is called “Bom Jesus” meaning 'good Jesus' or 'infant Jesus' to whom it is dedicated. The façade has on it, at the top, the letters, “HIS” which are the first three letters of Jesus in Greek
+      </p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+      <h2>Timings</h2>
+
+      <p id="content">
+       
+The Basilica of Bom Jesus is located in Old Goa, India. It is famous for housing the mortal remains of St. Francis Xavier. Typically, the timings for visiting the Basilica of Bom Jesus are as follows:
+
+
+      <ul>
+        <li>Monday to Saturday: 9:00 AM to 6:30 PM
+           </li>
+           <li>  Sunday: 10:30 AM to 6:30 PM
+        </li>
+      </ul>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="content">
+    <div class="content-details">
+      <h2>PHOTO GALLERY</h2>
+    </div>
+  </div>
+
+  <div class="full-img" id="fullImgBox">
+    <img src="basilica_church1.jpg" id="fullImg" />
+    <span onclick="closeFullImg()">&times;</span>
+  </div>
+  <div class="img-gallery">
+    <img src="basilica_church1.jpg" id="i1" onclick="openFullImg(this)" />
+    <img src="basilica_church2.jpg" id="i2" onclick="openFullImg(this)" />
+    <img src="basilica_church3.jpg" id="i3" onclick="openFullImg(this)" />
+    <img src="basilica_church4.jpg" id="i4" onclick="openFullImg(this)" />
+    <img src="basilica_church5.jpg" id="i5" onclick="openFullImg(this)" />
+    <img src="basilica_church6.jpg" id="i6" onclick="openFullImg(this)" />
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+      <h2>TRANSPORT GUIDE</h2>
+    </div>
+  </div>
+
+  <div class="transport-section">
+    <h2>How to Get There</h2>
+    <div class="transport-method">
+      <img src="../bus.png" alt="Road Icon">
+      <div>
+        <p><strong>By Road</strong></p>
+        <p>The nearest bus station to the Basilica of Bom Jesus in Old Goa, India, is the Old Goa Bus Station, also known as the Kadamba Bus Station. It's located within walking distance from the Basilica, making it a convenient transportation option for visitors.     </div>
+    </div>
+    <div class="transport-method">
+      <img src="../train.png" alt="Train Icon">
+      <div>
+        <p><strong>By Train</strong></p>
+        <p>The nearest railway station to the Basilica of Bom Jesus in Old Goa, India, is the Karmali Railway Station. It is situated approximately 10 kilometers away from the Basilica. From Karmali Railway Station, you can take a taxi or a local bus to reach the Basilica</p>
+      </div>
+    </div>
+    <div class="transport-method">
+      <img src='../air.png' alt="Airplane Icon">
+      <div>
+        <p><strong>By Air</strong></p>
+        <p>
+            The nearest airport to the Basilica of Bom Jesus in Old Goa, India, is the Dabolim Airport (also known as Goa International Airport or simply Goa Airport). It is located approximately 29 kilometers away from Old Goa</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    
+    
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    var xyz;
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic.src;
+      xyz = document.getElementById(pic.id);
+      xyz.classList.add('close');
+    }
+
+    function closeFullImg(pic) {
+      fullImgBox.style.display = "none";
+      xyz.classList.remove('close')
+    }
+
+  </script>
+
+</body>
+
+</html>

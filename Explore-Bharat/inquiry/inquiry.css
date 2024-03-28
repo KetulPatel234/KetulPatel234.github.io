@@ -6,30 +6,36 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    background: url(dark.avif) no-repeat;
+    background: url(asian-couple-tourist-holding-city-map-crossing-road.jpg) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
 }
 
-.container {
+#c2 {
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .booking-form {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     width: 100%;
     width: 900px;
+    background-color: hsla(300, 19%, 12%, 0.5);
     max-width: 900px;
     margin-top: 3px;
 }
 
-hr{
+hr {
     border: 2px solid black;
 }
 
@@ -57,10 +63,10 @@ hr{
     background-color: white;
     outline: none;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transform:scale(1.03)
+    transform: scale(1.03)
 }
 
-::placeholder{
+::placeholder {
     font-weight: 600;
 }
 
@@ -69,13 +75,13 @@ hr{
     color: white;
 }
 
-#check-div{
-    color:white;
+#check-div {
+    color: white;
     font-size: 15px;
     margin-bottom: 20px;
 }
 
-#check-div pre{
+#check-div pre {
     display: inline;
 }
 

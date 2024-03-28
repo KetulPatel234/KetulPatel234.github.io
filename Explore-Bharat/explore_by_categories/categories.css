@@ -1,93 +1,136 @@
-* {
-    font-family: "Protest Riot", sans-serif;
+.navbar {
+  font-family: "Protest Riot", sans-serif;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  font-size: 20px;
 }
 
+.navbar-brand {
+  font-family: "Protest Riot", sans-serif;
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+.nav-link {
+  font-family: "Protest Riot", sans-serif;
+  position: relative;
+  color: #a0a0a0;
+  text-decoration: none;
+  padding: 0 20px;
+  margin: 0px 20px;
+  letter-spacing: 0.5px;
+}
+
+.navbar-toggler {
+  font-family: "Protest Riot", sans-serif;
+  margin-right: 15px !important;
+}
 .categories-h1 {
-    color: white;
-    text-align: justify;
-    padding: 120px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: justify;
+  padding: 120px;
 }
 
 .categories-p {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
-    margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 20px;
 }
 
 .categories-ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 280px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 280px;
 }
 
 .categories-photo {
-    margin: 20px;
-    text-align: center;
+  margin: 20px;
+  text-align: center;
 }
 
 .categories-photo img {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .categories-photo img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .title {
-    margin-top: 10px;
-    font-size: 20px;
-    color: #555;
+  
+  margin-top: 10px;
+  font-size: 20px;
+  color: #555;
 }
 
 .religious-div {
-    background-image: url(Religious/religious_banner.jpeg);
-    height: 400px;
-    width: 100%;
-    padding: 150px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-image: url(Religious/75291.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  padding: 150px;
+  text-align: center;
+
+  margin-bottom: 50px;
+
+  background-position: center;
 }
 
 .historic-div {
-    background-image: url(Historic/historic_banner.jpeg);
-    height: 400px;
-    width: 100%;
-    padding: 150px;
-    background-size: cover;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background-image: url(Historic/india-architecture.jpg);
+  height: 400px;
+  width: 100%;
+  padding: 150px;
+  background-size: cover;
+  background-position: center;
 }
 
-
 .hillstation-div {
-    background-image: url(Hill_Station/hill_station_banner.jpg);
-    height: 400px;
-    width: 100%;
-    padding: 150px;
-    background-size: cover;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-image: url(Hill_Station/hill_station_banner.jpg);
+  height: 400px;
+  width: 100%;
+  padding: 150px;
+  background-size: cover;
 }
 
 .historic-h1 {
-    color: rgb(2, 1, 1);
-    text-align: justify;
-    padding: 120px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: whitesmoke;
+  text-align: justify;
+  padding: 120px;
 }
 
-
 .historic-ul {
-    margin: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
 }
