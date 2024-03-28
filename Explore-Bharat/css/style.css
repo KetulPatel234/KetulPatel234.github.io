@@ -83,6 +83,10 @@
   max-width: 65%;
 }
 
+#places_carousel_back img{
+  width: 100vw !important;
+}
+
 #places_carousel_back img {
   filter: brightness(30%) blur(4px);
 }
@@ -234,8 +238,9 @@
   border-radius: 20px;
 }
 
-.distributionDiv .image-container h1{
+.distributionDiv .image-container h1 {
   display: none;
+  margin-left:25%;
 }
 
 .distributionDiv {
@@ -263,12 +268,24 @@
     display: none;
   }
 
-  .image{
+  .image {
     margin-bottom: 20px;
-    max-width:300px
+    max-width: 300px
   }
 
-  .distributionDiv .image-container h1{
+  .distributionDiv .image-container h1 {
     display: inline;
+  }
+}
+
+@media (max-width:330px){
+  .distributionDiv .image-container h1{
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width:270px){
+  .distributionDiv .image-container h1{
+    font-size: 20px !important;
   }
 }
