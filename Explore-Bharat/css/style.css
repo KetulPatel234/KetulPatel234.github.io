@@ -84,7 +84,7 @@
 }
 
 #places_carousel_back img {
-  filter: brightness(30%) blur(4px) contrast(140%);
+  filter: brightness(30%) blur(4px);
 }
 
 #places_carousel_back {
