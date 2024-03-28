@@ -17,7 +17,7 @@
  }
 
  .content:hover {
-     background-color: hsla(0, 29%, 51%, 0.6);
+     background-color: rgb(228, 226, 226);
      transform: scale(1.05);
  }
 
@@ -55,6 +55,7 @@
      margin-bottom: 30px;
      transition: transform 0.3s background-color 0.3s;
      cursor: pointer;
+     transition: transform 0.5s ease-in-out;
 
  }
 

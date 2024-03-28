@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aguda Fort</title>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
 
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aguada Fort</title>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
 
-      }
-      .header {
-        height: 400px; 
-        background-image: url("Aguada-Fort_600.jpg");
-        background-size: cover;
-        background-position: center;
-        align-items: center; 
-      }
-      .header h1 {
-        color: rgb(253, 253, 253);
-        position: relative;
-        top: 310px;
-        left: 40px;
-        font-size: 3em;
-      }
-      
-      .content {
-        padding: 20px;
-        font-size: 17px;
-       color: black;
-        text-align: justify;      
-      }
-      .content-details{
-        padding: 0px 100px;
-      }
-      .hidden {
-        display: none;
-      }
-      .show-more-btn {
-        display: block;
-        /* margin: 20px auto;
+    }
+
+    .header {
+      height: 400px;
+      background-image: url("Aguada-Fort_600.jpg");
+      background-size: cover;
+      background-position: center;
+      align-items: center;
+    }
+
+    .header h1 {
+      color: rgb(253, 253, 253);
+      position: relative;
+      top: 310px;
+      left: 40px;
+      font-size: 3em;
+    }
+
+    .content {
+      padding: 20px;
+      font-size: 17px;
+      color: black;
+      text-align: justify;
+    }
+
+    .content-details {
+      padding: 0px 100px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .show-more-btn {
+      display: block;
+      /* margin: 20px auto;
         padding: 20px; */
-        cursor: pointer;
-        
-        color: blue;
+      cursor: pointer;
+
+      color: blue;
 
 
-      }
-     
-      .img-gallery {
+    }
+
+    .img-gallery {
       width: 70%;
       margin: 40px auto 50px;
       display: grid;
@@ -79,7 +86,7 @@
       transform: scale(1.05);
     }
 
-    .close{
+    .close {
       visibility: hidden;
     }
 
@@ -114,151 +121,195 @@
 
     .transport-section {
       margin-top: 50px;
-          margin-left: 220px;
-          margin-right: 220px;
-          height: fit-content;
-            background-color: #e1c5c5; /* Change the background color as needed */
-            padding-top: 20px;
-            text-align: justify;
-            color: rgb(21, 20, 20);
-            
-        }
-        .transport-section h2 {
-          padding: 60px 60px;
-            color: #100f0f; /* Change the text color as needed */
-            text-align: center;
-          }
-        .transport-method {
-          padding-bottom: 50px;
-            display: flex;
-            align-items: center;
-            margin: 90px;
-        }
-        .transport-method img {
-            width:100px;
-            height: 100px;
-            margin-right:10px;}
+      margin-left: 220px;
+      margin-right: 220px;
+      height: fit-content;
+      background-color: #e1c5c5;
+      /* Change the background color as needed */
+      padding-top: 20px;
+      text-align: justify;
+      color: rgb(21, 20, 20);
 
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <h1>Aguda Fort</h1>
-      
-      
-    </div>
+    }
 
-    <div class="content">
-      <div class="content-details" >
-        <p id="content">
-            
-            <h2>HISTORY</h2>
-            <p>Aguada Fort, located in Goa, India, boasts a rich history that intertwines with the region's colonial past and maritime heritage. Constructed in the early 17th century by the Portuguese, Aguada Fort served as a crucial defensive structure to guard against enemy attacks and protect the Portuguese interests in the region.</p>
-<p>
-The name "Aguada" itself derives from the Portuguese word "água," meaning water. The fort was strategically positioned atop a hill overlooking the Arabian Sea, providing a commanding view of the surrounding area and serving as a vantage point to monitor maritime activities along the coast.</p>
-<p>
-One of the primary purposes of Aguada Fort was to safeguard the nearby Aguada Water Reservoir, which was constructed to provide a reliable freshwater source for passing ships. The reservoir, now known as the Aguada Fort and Jail, was a vital stopover for Portuguese ships traveling to and from their colonies in Africa, India, and beyond.</p>
-        </p>
-        
+    .transport-section h2 {
+      padding: 60px 60px;
+      color: #100f0f;
+      /* Change the text color as needed */
+      text-align: center;
+    }
 
-        
-        
-      </div>
-      
-    </div>
+    .transport-method {
+      padding-bottom: 50px;
+      display: flex;
+      align-items: center;
+      margin: 90px;
+    }
 
-    <div class="content">
-      <div class="content-details" >
-        <h2>Architecture</h2>
-       
-        <p id="content">Architecturally, Aguada Fort is an impressive feat of military engineering, characterized by its massive walls, bastions, and ramparts. Constructed using locally sourced laterite stone and limestone, the fort's sturdy structure was designed to withstand enemy assaults and artillery fire. The fortification features a commanding outer wall enclosing an expansive area, with strategically placed bastions equipped with cannons for defense.
+    .transport-method img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
 
-          <p>One of the most notable features of Aguada Fort is its iconic lighthouse, situated atop the bastion overlooking the sea. Built in the 19th century, the lighthouse served as a navigational aid for ships navigating the treacherous waters along Goa's coastline. Today, it stands as a symbol of Goa's maritime heritage and offers panoramic views of the surrounding landscape.
-          </p><p>
-          Visitors to Aguada Fort can explore its well-preserved structures, including the lighthouse, the freshwater reservoir, and the remnants of barracks and storage rooms. The fort's strategic significance and architectural grandeur continue to attract tourists and history enthusiasts, offering a glimpse into the colonial past of Goa and the legacy of Portuguese influence in the region.
-        </p></p>
-        
+<body>
+  <div class="header">
+    <h1>Aguada Fort</h1>
 
-      </div>
-      </div>
-    
-        </p>
-        </div>
-    </div>
-    
-      <div class="content">
-        <div class="content-details" >
-          <h2>TIMINGS</h2>
-         
-          <p id="content">
-            Aguada Fort in Goa typically welcomes visitors from morning until evening, with opening hours generally aligning with sunrise to sunset. However, exact timings may vary based on seasonal factors and local regulations, so it's advisable to verify the current schedule with local authorities or tourism offices. Arriving early can help visitors beat the crowds and make the most of their time exploring the fort's historic walls, underground tunnels, and scenic viewpoints overlooking the Arabian Sea. It's also important to be aware of any specific guidelines or restrictions in place for visitors, such as entry fees and photography policies, to ensure a smooth and enjoyable experience at Aguada Fort.
-          </p>
-          
-       </div>
-      </div>
-    
-      
-        </div>
-        <div class="content">
-          <div class="content-details" >
-            <h2>NEARBY ATTRACTIONS</h2>
-            <p>Near Aguada Fort in Goa, visitors can explore a range of captivating attractions, including the scenic Sinquerim Beach and Candolim Beach, both perfect for leisurely strolls and water sports activities. Within the Aguada Fort complex, the historic Aguada Lighthouse offers panoramic views of the Arabian Sea, while nearby Reis Magos Fort provides insights into Goan history and culture. Adjacent to Aguada Fort lies the Aguada Jail, a silent witness to Goa's colonial past. Additionally, for those seeking luxury accommodations, the Fort Aguada Beach Resort offers a splendid retreat amidst lush greenery and overlooking the Arabian Sea. These nearby attractions complement the historic charm of Aguada Fort, providing visitors with a diverse range of experiences, from beachside relaxation to cultural exploration.</p>
-          </div>
-        </div>
-           
-            
 
-        <div class="content">
-          <div class="content-details" >
-            <h2>PHOTO GALLERY</h2>
-          </div>
-          </div>
-       
-        <div class="full-img" id="fullImgBox">
-          <img src="agudafort1.jpg" id="fullImg"/>
-          <span onclick="closeFullImg()">&times;</span>
-      </div>
-      <div class="img-gallery">
-          <img src="agudafort2.jpg" id="i1"  onclick="openFullImg(this)"/>
-          <img src="agudafort1.jpg" id="i2" onclick="openFullImg(this)"/>
-          <img src="agudafort5.jpg" id="i3" onclick="openFullImg(this)"/>
-          <img src="agudafort6.jpg" id="i4" onclick="openFullImg(this)"/>
-          <img src="agudafort3.jpg" id="i5" onclick="openFullImg(this)"/>
-          <img src="agudafort7.jpg" id="i6" onclick="openFullImg(this)"/>
-      </div>
-
-      <div class="content">
-        <div class="content-details" >
-          <h2>TRANSPORT GUIDE</h2>
-        </div>
-        </div>
-     
-    <div class="transport-section">
-      <h2>How to Get There</h2>
-      <div class="transport-method">
-          <img src="../bus.png" alt="Road Icon" >
-          <div>
-            <p><strong>By Road</strong></p>
-            <p>Goa is well-connected by state-run and private buses from various cities and towns. Visitors can take buses to Mapusa or Panaji, and then transfer to local buses or taxis to reach Aguada Fort. Alternatively, they can hire taxis directly from the bus stations to the fort.</p>
-        </div>
-      </div>
-      <div class="transport-method">
-          <img src="../train.png" alt="Train Icon">
-          <div>
-            <p><strong>By Train</strong></p>
-            <p>The nearest railway station to Aguada Fort is Thivim Railway Station, located approximately 20 kilometers away. From Thivim, visitors can hire taxis or use local buses to reach the fort. The journey by road takes approximately 30 to 45 minutes, depending on traffic.</p>
-        </div>
-      </div>
-      <div class="transport-method">
-          <img src='../air.png' alt="Airplane Icon">
-          <div>
-            <p><strong>By Air</strong></p>
-            <p>The nearest airport to Aguada Fort is Goa International Airport (Dabolim Airport), located approximately 45 kilometers away. From the airport, visitors can hire taxis or use app-based ride-sharing services to reach the fort. The journey typically takes around 1 to 1.5 hours, depending on traffic conditions.</p>
-        </div>
-   </div>
   </div>
-  
-    
+
+  <div class="content">
+    <div class="content-details">
+      <p id="content">
+
+      <h2>HISTORY</h2>
+      <p>Aguada Fort, located in Goa, India, boasts a rich history that intertwines with the region's colonial past and
+        maritime heritage. Constructed in the early 17th century by the Portuguese, Aguada Fort served as a crucial
+        defensive structure to guard against enemy attacks and protect the Portuguese interests in the region.</p>
+      <p>
+        The name "Aguada" itself derives from the Portuguese word "água," meaning water. The fort was strategically
+        positioned atop a hill overlooking the Arabian Sea, providing a commanding view of the surrounding area and
+        serving as a vantage point to monitor maritime activities along the coast.</p>
+      <p>
+        One of the primary purposes of Aguada Fort was to safeguard the nearby Aguada Water Reservoir, which was
+        constructed to provide a reliable freshwater source for passing ships. The reservoir, now known as the Aguada
+        Fort and Jail, was a vital stopover for Portuguese ships traveling to and from their colonies in Africa, India,
+        and beyond.</p>
+      </p>
+
+
+
+
+    </div>
+
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+      <h2>Architecture</h2>
+
+      <p id="content">Architecturally, Aguada Fort is an impressive feat of military engineering, characterized by its
+        massive walls, bastions, and ramparts. Constructed using locally sourced laterite stone and limestone, the
+        fort's sturdy structure was designed to withstand enemy assaults and artillery fire. The fortification features
+        a commanding outer wall enclosing an expansive area, with strategically placed bastions equipped with cannons
+        for defense.
+
+      <p>One of the most notable features of Aguada Fort is its iconic lighthouse, situated atop the bastion overlooking
+        the sea. Built in the 19th century, the lighthouse served as a navigational aid for ships navigating the
+        treacherous waters along Goa's coastline. Today, it stands as a symbol of Goa's maritime heritage and offers
+        panoramic views of the surrounding landscape.
+      </p>
+      <p>
+        Visitors to Aguada Fort can explore its well-preserved structures, including the lighthouse, the freshwater
+        reservoir, and the remnants of barracks and storage rooms. The fort's strategic significance and architectural
+        grandeur continue to attract tourists and history enthusiasts, offering a glimpse into the colonial past of Goa
+        and the legacy of Portuguese influence in the region.
+      </p>
+      </p>
+
+
+    </div>
+  </div>
+
+  </p>
+  </div>
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+      <h2>TIMINGS</h2>
+
+      <p id="content">
+        Aguada Fort in Goa typically welcomes visitors from morning until evening, with opening hours generally aligning
+        with sunrise to sunset. However, exact timings may vary based on seasonal factors and local regulations, so it's
+        advisable to verify the current schedule with local authorities or tourism offices. Arriving early can help
+        visitors beat the crowds and make the most of their time exploring the fort's historic walls, underground
+        tunnels, and scenic viewpoints overlooking the Arabian Sea. It's also important to be aware of any specific
+        guidelines or restrictions in place for visitors, such as entry fees and photography policies, to ensure a
+        smooth and enjoyable experience at Aguada Fort.
+      </p>
+
+    </div>
+  </div>
+
+
+  </div>
+  <div class="content">
+    <div class="content-details">
+      <h2>NEARBY ATTRACTIONS</h2>
+      <p>Near Aguada Fort in Goa, visitors can explore a range of captivating attractions, including the scenic
+        Sinquerim Beach and Candolim Beach, both perfect for leisurely strolls and water sports activities. Within the
+        Aguada Fort complex, the historic Aguada Lighthouse offers panoramic views of the Arabian Sea, while nearby Reis
+        Magos Fort provides insights into Goan history and culture. Adjacent to Aguada Fort lies the Aguada Jail, a
+        silent witness to Goa's colonial past. Additionally, for those seeking luxury accommodations, the Fort Aguada
+        Beach Resort offers a splendid retreat amidst lush greenery and overlooking the Arabian Sea. These nearby
+        attractions complement the historic charm of Aguada Fort, providing visitors with a diverse range of
+        experiences, from beachside relaxation to cultural exploration.</p>
+    </div>
+  </div>
+
+
+
+  <div class="content">
+    <div class="content-details">
+      <h2>PHOTO GALLERY</h2>
+    </div>
+  </div>
+
+  <div class="full-img" id="fullImgBox">
+    <img src="agudafort1.jpg" id="fullImg" />
+    <span onclick="closeFullImg()">&times;</span>
+  </div>
+  <div class="img-gallery">
+    <img src="agudafort2.jpg" id="i1" onclick="openFullImg(this)" />
+    <img src="agudafort1.jpg" id="i2" onclick="openFullImg(this)" />
+    <img src="agudafort5.jpg" id="i3" onclick="openFullImg(this)" />
+    <img src="agudafort6.jpg" id="i4" onclick="openFullImg(this)" />
+    <img src="agudafort3.jpg" id="i5" onclick="openFullImg(this)" />
+    <img src="agudafort7.jpg" id="i6" onclick="openFullImg(this)" />
+  </div>
+
+  <div class="content">
+    <div class="content-details">
+      <h2>TRANSPORT GUIDE</h2>
+    </div>
+  </div>
+
+  <div class="transport-section">
+    <h2>How to Get There</h2>
+    <div class="transport-method">
+      <img src="../bus.png" alt="Road Icon">
+      <div>
+        <p><strong>By Road</strong></p>
+        <p>Goa is well-connected by state-run and private buses from various cities and towns. Visitors can take buses
+          to Mapusa or Panaji, and then transfer to local buses or taxis to reach Aguada Fort. Alternatively, they can
+          hire taxis directly from the bus stations to the fort.</p>
+      </div>
+    </div>
+    <div class="transport-method">
+      <img src="../train.png" alt="Train Icon">
+      <div>
+        <p><strong>By Train</strong></p>
+        <p>The nearest railway station to Aguada Fort is Thivim Railway Station, located approximately 20 kilometers
+          away. From Thivim, visitors can hire taxis or use local buses to reach the fort. The journey by road takes
+          approximately 30 to 45 minutes, depending on traffic.</p>
+      </div>
+    </div>
+    <div class="transport-method">
+      <img src='../air.png' alt="Airplane Icon">
+      <div>
+        <p><strong>By Air</strong></p>
+        <p>The nearest airport to Aguada Fort is Goa International Airport (Dabolim Airport), located approximately 45
+          kilometers away. From the airport, visitors can hire taxis or use app-based ride-sharing services to reach the
+          fort. The journey typically takes around 1 to 1.5 hours, depending on traffic conditions.</p>
+      </div>
+    </div>
+  </div>
+
+
   <script>
     var fullImgBox = document.getElementById("fullImgBox");
     var fullImg = document.getElementById("fullImg");
@@ -276,5 +327,6 @@ One of the primary purposes of Aguada Fort was to safeguard the nearby Aguada Wa
     }
 
   </script>
-  </body>
+</body>
+
 </html>

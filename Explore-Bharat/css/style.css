@@ -2,13 +2,13 @@
   font-family: "Protest Riot", sans-serif;
 }
 
-.row{
+.row {
   margin: 0px !important;
   padding: 0px !important;
 }
 
 .navbar-brand,
-.nav-link{
+.nav-link {
   font-family: "Protest Riot", sans-serif !important;
 }
 
@@ -92,10 +92,6 @@
 }
 
 #places_carousel .carousel-item:hover {
-  cursor: pointer;
-}
-
-.distributionDiv div:hover {
   cursor: pointer;
 }
 
@@ -219,8 +215,8 @@
 .overlay {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 10;
+  width: 95%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
@@ -238,7 +234,41 @@
   border-radius: 20px;
 }
 
+.distributionDiv .image-container h1{
+  display: none;
+}
+
 .distributionDiv {
-  padding-top: 200px;
-  padding-left: 160px;
+  margin: 200px auto !important;
+}
+
+.distributionDiv div:hover {
+  cursor: pointer;
+}
+
+@media (max-width:1200px) {
+  .overlay {
+    width: 93%;
+  }
+}
+
+@media (max-width:990px) {
+  .overlay {
+    width: 90%;
+  }
+}
+
+@media (max-width:768px) {
+  .overlay {
+    display: none;
+  }
+
+  .image{
+    margin-bottom: 20px;
+    max-width:300px
+  }
+
+  .distributionDiv .image-container h1{
+    display: inline;
+  }
 }

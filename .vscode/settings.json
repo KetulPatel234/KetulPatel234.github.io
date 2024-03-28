@@ -1,3 +1,5 @@
 {
-    "livePreview.defaultPreviewPath": "/Resume Builder/index.html"
+    "livePreview.defaultPreviewPath": "/Resume Builder/index.html",
+    "editor.stickyScroll.enabled": false,
+    "editor.stickyScroll.scrollWithEditor": false
 }
